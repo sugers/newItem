@@ -1,0 +1,284 @@
+@baseColor:#4c8bf4;
+@shadow:0 0 6px rgba(0, 0, 0, .13);
+.widthMargin {
+    width: 1200px; margin: 0 auto;
+}
+body {
+    overflow: hidden;
+}
+.header {
+    height: 50px;
+    line-height: 50px;
+    background: @baseColor;
+    color: #fff;
+    .main {
+        .widthMargin;
+        .userMsg {
+            text-align: right;
+            line-height: 20px;
+            font-size: 12px;
+            margin-top: 4px;
+
+            span {
+                padding-left: 20px;
+            }
+            span.user {
+                background: url('../img/icon-user.png') left center no-repeat;
+                margin-right: 20px;
+            }
+            span.logOut {
+                background: url('../img/icon-logOut.png') left center no-repeat;
+                margin-left: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+.search {
+    .widthMargin;
+    box-shadow: @shadow;
+    background: #fff;
+    text-align: center;
+    height: 84px;
+    line-height: 84px;
+
+    .searchM {
+            display: inline-block;
+            margin: 0 auto;
+            text-align: left;
+        .InputSelect{
+            display: inline-block;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid @baseColor;
+            width: 118px;
+            position: relative;
+            input {
+                background: url('../img/icon-dropDown.png') right center no-repeat;
+                border: none;
+                outline: none;
+                width: 100px;
+                padding:0 15px;
+                font-size: 16px;
+            }
+            #searchKind {
+                color: #666;
+            }
+            ul {
+                position: absolute;
+                top: 40px;
+                z-index: 10;
+                background: #fff;
+                border: 1px solid @baseColor;
+                width: 116px;
+                display: none;
+                li {
+                    text-align: center;
+                    list-style: none;
+                }
+                li:hover {
+                    background: @baseColor;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }    
+
+
+        form {
+            height: 40px;
+            border: 1px solid @baseColor;
+            width: 538px;
+            display: inline-block;
+            line-height: 38px;
+
+            input {
+                border: none;
+                width: 460px;
+                height: 38px;
+                outline: none;
+                vertical-align: middle;
+                padding-left: 20px;
+            }
+            input[type=submit] {
+                width: 20px;
+                height: 20px;
+                background: url('../img/icon-search-blue.png') no-repeat center;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.container {
+    .widthMargin;
+    .nav {
+        li {
+            float: left;
+            font-size: 16px;
+            height: 48px;
+            width: 600px;
+            text-align: center;
+            line-height: 48px;
+            color: #333;
+            background: #cccccc;
+            cursor: pointer;
+        }
+        li.active {
+            background: @baseColor;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+    .content {
+        position: absolute;
+        bottom: 0;
+        top: 182px;
+        .leftSide {
+            float: left;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            width: 160px;
+            background: #353f4b;
+            
+            li {
+                height: 62px;
+                line-height: 62px;
+                margin: 0 25px;
+                text-align: center;
+                color: #fff;
+                border: 1px solid #fff;
+                border-width: 0 0 1px 0;
+
+                a {
+                    color: #fff;
+                }
+            }
+            .historyLeft {
+                .Hyear {
+                    text-align: center;
+                    padding-left: 15px;
+                    height: 62px;
+                    background: @baseColor;
+                    color: #fff;
+                    line-height: 62px;
+                    i {
+                        float: right;
+                        height: 62px;
+                        line-height: 62px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        .rightSide {
+            float: left;
+            width: 1040px;
+            overflow: hidden;
+            position: absolute;
+            bottom: 0;
+            top: 0px;
+            left: 160px;
+            .dateList{
+                position: absolute;
+                bottom: 0;
+                top: 0px;
+                overflow-y: scroll;
+                width: 1060px;
+                .dateItem {
+                    padding-left: 40px;
+                    padding-bottom: 27px;
+                    background: #fff;
+                    margin-bottom: 10px;
+    
+                    .time {
+                        font-size: 16px;
+                        color: @baseColor;
+                        font-weight: bold;
+                        height: 40px;
+                        line-height: 40px;
+                    }
+                }
+            }
+
+            .fileList {
+                overflow: hidden;
+                .fileItem {
+                    float: left;
+                    text-align: center;
+                    width: 160px;
+                    height: 176px;
+                    background: #fff;
+                    font-size: 14px;
+                    margin: 3px;
+
+                    a {
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        padding: 8px 16px;
+                        box-sizing: border-box;
+                    }
+                }
+                .fileItem:hover {
+                    box-shadow: @shadow;
+                }
+            }
+
+            .historyRight {
+                font-size: 14px;
+                color: #333;
+                background: #fff;
+                overflow: hidden;
+                padding:0 28px 0 40px;
+                box-shadow: @shadow;
+
+                .THeader {
+                    height: 50px;
+                    line-height: 50px;
+                }
+                .TBody {
+                    
+                    li {
+                        height: 60px;
+                        line-height: 60px;
+                        border-top: 1px solid #e6e6e6;
+                        overflow: hidden;
+                    }
+                }
+                
+                .caseNumber {
+                    float: left;
+                    width: 240px;
+                    img {
+                        vertical-align: middle;
+                    }
+                }
+                .applicant {
+                    float: left;
+                    width: 146px;
+                }
+                .respondent {
+                    float: left;
+                    width: 200px;
+                }
+                .thirdPerson {
+                    float: left;
+                    width: 160px;
+                }
+                .startTime {
+                    float: left;
+                    width: 146px;
+                }
+                .dealTime {
+                    float: left;
+                    width: 80px;
+                }
+
+            }
+        }
+    }
+}
