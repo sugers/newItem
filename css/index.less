@@ -45,6 +45,7 @@ body {
     line-height: 84px;
 
     .searchM {
+            position: relative;
             display: inline-block;
             margin: 0 auto;
             text-align: left;
@@ -54,6 +55,7 @@ body {
             line-height: 40px;
             border: 1px solid @baseColor;
             width: 118px;
+            margin-right: 5px;
             position: relative;
             input {
                 background: url('../img/icon-dropDown.png') right center no-repeat;
@@ -88,7 +90,7 @@ body {
 
 
         form {
-            height: 40px;
+            height: 39px;
             border: 1px solid @baseColor;
             width: 538px;
             display: inline-block;
@@ -97,7 +99,7 @@ body {
             input {
                 border: none;
                 width: 460px;
-                height: 38px;
+                line-height: 14px;
                 outline: none;
                 vertical-align: middle;
                 padding-left: 20px;
@@ -107,6 +109,78 @@ body {
                 height: 20px;
                 background: url('../img/icon-search-blue.png') no-repeat center;
                 cursor: pointer;
+            }
+        }
+
+        .searchRes {
+            display: none;
+            box-sizing: border-box;
+            width: 100%;
+            position: absolute;
+            top: 62px;
+            background: #fff;
+            box-shadow: @shadow;
+            z-index: 20;
+            line-height: 40px;
+            font-size: 14px;
+            padding-left: 10px;
+            color: #333;
+
+            .searchResHeader {
+                overflow: hidden;
+                clear: both;
+                // position: absolute;
+                height: 40px;
+                line-height: 40px;
+                background: #fff;
+                margin-bottom: -1px;
+                border-bottom: 1px solid #e6e6e6;
+            }
+
+            .caseNumber {
+                float: left;
+                width: 210px;
+                padding-right: 15px;
+            }
+            .applicant {
+                float: left;
+                width: 145px;
+                padding-right: 20px;
+            }
+            .respondent {
+                float: left;
+                width: 155px;
+                padding-right: 20px;
+            }
+            .startTime {
+                float: left;
+                width: 85px;
+                padding-right: 20px;
+            }
+            .dealTime {
+                float: left;
+                width: 85px;
+            }
+            .searchResBody {
+                // width: -webkit-calc(100%-(40px));
+                // position: absolute;
+                // background: #fff;
+                // top: 40px;
+                overflow: hidden;
+                // padding-right: 40px;
+                max-height: 246px;
+                overflow-y: auto;
+                // width: 
+                li {
+                    clear: both;
+                    border-top: 1px solid #e6e6e6;
+                    overflow: hidden;   
+                }
+                span {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
             }
         }
     }
@@ -147,15 +221,19 @@ body {
             li {
                 height: 62px;
                 line-height: 62px;
-                margin: 0 25px;
                 text-align: center;
                 color: #fff;
-                border: 1px solid #fff;
-                border-width: 0 0 1px 0;
-
+                // border-width: 0 0 1px 0;
+                
                 a {
                     color: #fff;
+                    display: block;
+                    border-bottom: 1px solid #fff;
+                    margin: 0 25px;
                 }
+            }
+            li.active {
+                background: #576171;
             }
             .historyLeft {
                 .Hyear {
@@ -180,7 +258,7 @@ body {
             overflow: hidden;
             position: absolute;
             bottom: 0;
-            top: 0px;
+            top: 0;
             left: 160px;
             .dateList{
                 position: absolute;
@@ -190,7 +268,7 @@ body {
                 width: 1060px;
                 .dateItem {
                     padding-left: 40px;
-                    padding-bottom: 27px;
+                    padding-bottom: 10px;
                     background: #fff;
                     margin-bottom: 10px;
     
@@ -221,14 +299,23 @@ body {
                         width: 100%;
                         padding: 8px 16px;
                         box-sizing: border-box;
+
+                        img {
+                            height: 90px;
+                            width: 70px;
+                        }
                     }
                 }
                 .fileItem:hover {
                     box-shadow: @shadow;
+                    background: #eee;
                 }
             }
 
             .historyRight {
+                position: absolute;
+                bottom: 0;
+                top: 0;
                 font-size: 14px;
                 color: #333;
                 background: #fff;
@@ -240,13 +327,28 @@ body {
                     height: 50px;
                     line-height: 50px;
                 }
-                .TBody {
-                    
-                    li {
-                        height: 60px;
-                        line-height: 60px;
-                        border-top: 1px solid #e6e6e6;
-                        overflow: hidden;
+                .clearBar {
+                    overflow: hidden;
+                    position: absolute;
+                    bottom: 0;
+                    top: 0;
+                    width: 970px;
+                    .TBody {
+                        position: absolute;
+                        bottom: 0;
+                        top: 50px;
+                        overflow-y: scroll;
+                        width: 990px;
+    
+                        li {
+                            height: 60px;
+                            line-height: 60px;
+                            border-top: 1px solid #e6e6e6;
+                            overflow: hidden;
+                        }
+                        li:hover {
+                            background: #eee;
+                        }
                     }
                 }
                 
@@ -277,8 +379,10 @@ body {
                     float: left;
                     width: 80px;
                 }
-
             }
         }
     }
+}
+.dnone {
+    display: none;
 }
