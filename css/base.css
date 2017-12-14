@@ -15,6 +15,7 @@ body
     font-family: 'microsoft yahei' ,Verdana,Arial,Helvetica,sans-serif;
     color: #000;
     -webkit-text-size-adjust: none;
+     background: #f2f2f2;
 }
 img, fieldset
 {
@@ -42,13 +43,17 @@ table
 {
     clear: both;
     width: 100%;
-    background-color: #fff;
 }
 #clear:after
 {
     display: block;
     clear: both;
-    height: 1px;
     margin-top: -1px;
     content: '';
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
 }

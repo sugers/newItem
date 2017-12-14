@@ -1,0 +1,683 @@
+.case_info {
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  position: relative;
+}
+.case_info .case_top li {
+  width: 33.33%;
+  background: #343e4a;
+  float: left;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+  border-left: 1px solid #fff;
+  margin-left: -1px;
+  font-size: 16px;
+}
+.case_info .case_top li:hover {
+  background: #4d8cf4;
+}
+.case_info .case_left {
+  display: inline-block;
+  height: 2307px;
+  font-size: 16px;
+  top: 48px;
+  width: 180px;
+  background: #343e4a;
+}
+.case_info .case_left ul li {
+  width: 100%;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  color: #fff;
+  border-bottom: 1px solid #1b2128;
+}
+.case_info .case_left ul li:hover {
+  background: #576171;
+  cursor: pointer;
+}
+.case_info .case_right {
+  width: 1000px;
+  padding-left: 20px;
+  background: #fff;
+  line-height: 52px;
+  border: none;
+  float: right;
+}
+.case_info .case_right .case_right_top {
+  width: 1000px;
+  height: 52px;
+  line-height: 52px;
+}
+.case_info .case_right .case_right_top #input_right {
+  position: absolute;
+  right: 30px;
+}
+.case_info .case_right .case_right_top #input_right .save,
+.case_info .case_right .case_right_top #input_right .return {
+  font-size: 16px;
+  width: 80px;
+  height: 30px;
+  border: none;
+  color: #fff;
+}
+.case_info .case_right .case_right_top #input_right .save {
+  background: #f78723;
+}
+.case_info .case_right .case_right_top #input_right .return {
+  background: #4d8cf4;
+}
+.case_info .case_right .case_right_top span {
+  padding-left: 14px;
+  font-size: 20px;
+}
+.case_info .case_right .base_info .base_title {
+  width: 956px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  padding-left: 14px;
+  background: #4d8cf4;
+  border-right: 1px solid #ccc;
+}
+.case_info .case_right .base_info .base_content ul {
+  float: left;
+  width: 50%;
+}
+.case_info .case_right .base_info .base_content ul li {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.case_info .case_right .base_info .base_content ul li span {
+  display: inline-block;
+  width: 118px;
+  padding-left: 14px;
+  background: #ebf3ff;
+  border-top: 1px solid #fff;
+}
+.case_info .case_right .base_info .base_content ul li input,
+.case_info .case_right .base_info .base_content ul li select {
+  display: inline-block;
+  border: none;
+  outline: none;
+  width: 70%;
+}
+.case_info .case_right .base_info .base_content ul li input {
+  color: #6e9ef5;
+}
+.case_info .case_right .base_info .base_content .base_two {
+  width: 47%;
+  border-right: 1px solid #ccc;
+}
+.case_info .case_right .base_info .base_content .base_remenber {
+  width: 97%;
+  background: #fff;
+  border-right: 1px solid #ccc;
+}
+.case_info .case_right .base_info .base_content .base_remenber li {
+  height: 60px;
+}
+.case_info .case_right .base_info .base_content .base_remenber li span {
+  display: inline-block;
+  width: 118px;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 14px;
+  background: #ebf3ff;
+  border-top: 1px solid #fff;
+}
+.case_info .case_right .reson_info {
+  float: left;
+  margin-top: 20px;
+}
+.case_info .case_right .reson_info .reson_title {
+  width: 957px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  padding-left: 14px;
+  background: #4d8cf4;
+  border-right: 1px solid #ccc;
+}
+.case_info .case_right .reson_info .reson_remenber {
+  background: #fff;
+  border-right: 1px solid #ccc;
+}
+.case_info .case_right .reson_info .reson_remenber li {
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.case_info .case_right .reson_info .reson_remenber li span {
+  float: left;
+  display: inline-block;
+  width: 118px;
+  height: 100%;
+  line-height: 60px;
+  padding-left: 14px;
+  background: #ebf3ff;
+  border-top: 1px solid #fff;
+}
+.case_info .case_right .reson_info .reson_remenber li textarea {
+  display: inline-block;
+  border: none;
+  outline: none;
+  width: 85%;
+  height: 100%;
+  resize: none;
+  overflow: visible;
+}
+.case_info .case_right .applyer_info {
+  float: left;
+  margin-top: 20px;
+  position: relative;
+}
+.case_info .case_right .applyer_info .applyer_title {
+  width: 957px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  padding-left: 14px;
+  background: #4d8cf4;
+  border-right: 1px solid #ccc;
+}
+.case_info .case_right .applyer_info .applyer_title .z_title {
+  position: absolute;
+  height: 25px;
+  line-height: 25px;
+  width: 100px;
+  color: #fff;
+  background: #4d8cf4;
+  border: 1px solid #fff;
+  left: 105px;
+  top: 0;
+  margin-top: 5px;
+}
+.case_info .case_right .applyer_info .applyer_title .z_title span {
+  font-size: 14px;
+  display: inline-block;
+  width: 47%;
+  text-align: center;
+}
+.case_info .case_right .applyer_info .applyer_title .z_title .personal {
+  border-right: 1px solid #fff;
+}
+.case_info .case_right .applyer_info .applyer_tab .person_apply {
+  margin-right: 30px;
+}
+.case_info .case_right .applyer_info .applyer_tab .person_apply .introduce {
+  width: 957px;
+  height: 36px;
+  line-height: 36px;
+  color: #656565;
+  padding-left: 14px;
+  background: #e6e6e6;
+}
+.case_info .case_right .applyer_info .applyer_tab .person_apply ul {
+  border-right: 1px solid #ccc;
+  margin-right: 0;
+}
+.case_info .case_right .applyer_info .applyer_tab .person_apply ul li {
+  float: left;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.case_info .case_right .applyer_info .applyer_tab .person_apply ul li span {
+  display: inline-block;
+  width: 118px;
+  padding-left: 14px;
+  background: #ebf3ff;
+  border-top: 1px solid #fff;
+}
+.case_info .case_right .applyer_info .applyer_tab .person_apply ul li input,
+.case_info .case_right .applyer_info .applyer_tab .person_apply ul li select {
+  display: inline-block;
+  border: none;
+  outline: none;
+  width: 70%;
+}
+.case_info .case_right .applyer_info .applyer_tab .person_apply ul .special {
+  width: 100%;
+}
+.case_info .case_right .applyer_info .applyer_tab .add_apply {
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid #4d8cf4;
+  width: 97%;
+  line-height: 38px;
+  height: 38px;
+}
+.case_info .case_right .applyer_info .applyer_tab .person_apply_two {
+  margin-top: 20px;
+  margin-right: 30px;
+}
+.case_info .case_right .applyer_info .applyer_tab .person_apply_two .introduce {
+  width: 957px;
+  height: 36px;
+  line-height: 36px;
+  color: #656565;
+  padding-left: 14px;
+  background: #e6e6e6;
+}
+.case_info .case_right .applyer_info .applyer_tab .person_apply_two .introduce span {
+  float: right;
+  font-size: 14px;
+  margin-right: 10px;
+  color: #454646;
+}
+.case_info .case_right .applyer_info .applyer_tab .person_apply_two .introduce span img {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+.case_info .case_right .applyer_info .applyer_tab .person_apply_two ul {
+  border-right: 1px solid #ccc;
+  margin-right: 0;
+}
+.case_info .case_right .applyer_info .applyer_tab .person_apply_two ul li {
+  float: left;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.case_info .case_right .applyer_info .applyer_tab .person_apply_two ul li span {
+  display: inline-block;
+  width: 118px;
+  padding-left: 14px;
+  background: #ebf3ff;
+  border-top: 1px solid #fff;
+}
+.case_info .case_right .applyer_info .applyer_tab .person_apply_two ul li input,
+.case_info .case_right .applyer_info .applyer_tab .person_apply_two ul li select {
+  display: inline-block;
+  border: none;
+  outline: none;
+  width: 70%;
+}
+.case_info .case_right .applyer_info .applyer_tab .person_apply_two ul .special {
+  width: 100%;
+}
+.case_info .case_right .applyer_info .applyer_tab .unit_apply {
+  display: none;
+  margin-right: 30px;
+}
+.case_info .case_right .applyer_info .applyer_tab .unit_apply .introduce {
+  width: 957px;
+  height: 36px;
+  line-height: 36px;
+  color: #656565;
+  padding-left: 14px;
+  background: #e6e6e6;
+}
+.case_info .case_right .applyer_info .applyer_tab .unit_apply ul {
+  border-right: 1px solid #ccc;
+  margin-right: 0;
+}
+.case_info .case_right .applyer_info .applyer_tab .unit_apply ul li {
+  float: left;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.case_info .case_right .applyer_info .applyer_tab .unit_apply ul li span {
+  display: inline-block;
+  width: 118px;
+  padding-left: 14px;
+  background: #ebf3ff;
+  border-top: 1px solid #fff;
+}
+.case_info .case_right .applyer_info .applyer_tab .unit_apply ul li input,
+.case_info .case_right .applyer_info .applyer_tab .unit_apply ul li select {
+  display: inline-block;
+  border: none;
+  outline: none;
+  width: 70%;
+}
+.case_info .case_right .applyer_info .applyer_tab .unit_apply ul .special {
+  width: 100%;
+}
+.case_info .case_right .applyer_info .b_applyer_title {
+  position: relative;
+  margin-top: 20px;
+  width: 957px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  padding-left: 14px;
+  background: #4d8cf4;
+  border-right: 1px solid #ccc;
+}
+.case_info .case_right .applyer_info .b_applyer_title .z_title {
+  position: absolute;
+  height: 25px;
+  line-height: 25px;
+  width: 100px;
+  color: #fff;
+  background: #4d8cf4;
+  border: 1px solid #fff;
+  left: 120px;
+  top: 0;
+  margin-top: 5px;
+}
+.case_info .case_right .applyer_info .b_applyer_title .z_title span {
+  font-size: 14px;
+  display: inline-block;
+  width: 47%;
+  text-align: center;
+}
+.case_info .case_right .applyer_info .b_applyer_title .z_title .personal {
+  border-right: 1px solid #fff;
+}
+.case_info .case_right .applyer_info .b_applyer_tab .person_apply {
+  margin-right: 30px;
+}
+.case_info .case_right .applyer_info .b_applyer_tab .person_apply .introduce {
+  width: 957px;
+  height: 36px;
+  line-height: 36px;
+  color: #656565;
+  padding-left: 14px;
+  background: #e6e6e6;
+}
+.case_info .case_right .applyer_info .b_applyer_tab .person_apply ul {
+  border-right: 1px solid #ccc;
+  margin-right: 0;
+}
+.case_info .case_right .applyer_info .b_applyer_tab .person_apply ul li {
+  float: left;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.case_info .case_right .applyer_info .b_applyer_tab .person_apply ul li span {
+  display: inline-block;
+  width: 118px;
+  padding-left: 14px;
+  background: #ebf3ff;
+  border-top: 1px solid #fff;
+}
+.case_info .case_right .applyer_info .b_applyer_tab .person_apply ul li input,
+.case_info .case_right .applyer_info .b_applyer_tab .person_apply ul li select {
+  display: inline-block;
+  border: none;
+  outline: none;
+  width: 70%;
+}
+.case_info .case_right .applyer_info .b_applyer_tab .person_apply ul .special {
+  width: 100%;
+}
+.case_info .case_right .applyer_info .b_applyer_tab .b_unit_apply {
+  display: none;
+  margin-right: 30px;
+}
+.case_info .case_right .applyer_info .b_applyer_tab .b_unit_apply .introduce {
+  width: 957px;
+  height: 36px;
+  line-height: 36px;
+  color: #656565;
+  padding-left: 14px;
+  background: #e6e6e6;
+}
+.case_info .case_right .applyer_info .b_applyer_tab .b_unit_apply ul {
+  border-right: 1px solid #ccc;
+  margin-right: 0;
+}
+.case_info .case_right .applyer_info .b_applyer_tab .b_unit_apply ul li {
+  float: left;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.case_info .case_right .applyer_info .b_applyer_tab .b_unit_apply ul li span {
+  display: inline-block;
+  width: 118px;
+  padding-left: 14px;
+  background: #ebf3ff;
+  border-top: 1px solid #fff;
+}
+.case_info .case_right .applyer_info .b_applyer_tab .b_unit_apply ul li input,
+.case_info .case_right .applyer_info .b_applyer_tab .b_unit_apply ul li select {
+  display: inline-block;
+  border: none;
+  outline: none;
+  width: 70%;
+}
+.case_info .case_right .applyer_info .b_applyer_tab .b_unit_apply ul .special {
+  width: 100%;
+}
+.case_info .case_right .applyer_info .b_applyer_tab .add_apply {
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid #4d8cf4;
+  width: 97%;
+  line-height: 38px;
+  height: 38px;
+}
+.case_info .case_right .applyer_info .t_applyer_title {
+  margin-top: 20px;
+  width: 957px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  padding-left: 14px;
+  background: #4d8cf4;
+  border-right: 1px solid #ccc;
+}
+.case_info .case_right .applyer_info .t_applyer_title .z_title {
+  position: absolute;
+  height: 25px;
+  line-height: 25px;
+  width: 100px;
+  color: #fff;
+  background: #4d8cf4;
+  border: 1px solid #fff;
+  left: 105px;
+  top: 0;
+  margin-top: 5px;
+}
+.case_info .case_right .applyer_info .t_applyer_title .z_title span {
+  font-size: 14px;
+  display: inline-block;
+  width: 47%;
+  text-align: center;
+}
+.case_info .case_right .applyer_info .t_applyer_title .z_title .personal {
+  border-right: 1px solid #fff;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .person_apply {
+  margin-right: 30px;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .person_apply .introduce {
+  width: 957px;
+  height: 36px;
+  line-height: 36px;
+  color: #656565;
+  padding-left: 14px;
+  background: #e6e6e6;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .person_apply .introduce span {
+  float: right;
+  font-size: 14px;
+  margin-right: 10px;
+  color: #454646;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .person_apply .introduce span img {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .person_apply ul {
+  border-right: 1px solid #ccc;
+  margin-right: 0;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .person_apply ul li {
+  float: left;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .person_apply ul li span {
+  display: inline-block;
+  width: 118px;
+  padding-left: 14px;
+  background: #ebf3ff;
+  border-top: 1px solid #fff;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .person_apply ul li input,
+.case_info .case_right .applyer_info .t_applyer_tab .person_apply ul li select {
+  display: inline-block;
+  border: none;
+  outline: none;
+  width: 70%;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .person_apply ul .special {
+  width: 100%;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .add_apply {
+  margin-top: 20px;
+  text-align: center;
+  border: 1px solid #4d8cf4;
+  width: 97%;
+  line-height: 38px;
+  height: 38px;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .t_unit_apply {
+  margin-top: 20px;
+  margin-right: 30px;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .t_unit_apply .introduce {
+  width: 957px;
+  height: 36px;
+  line-height: 36px;
+  color: #656565;
+  padding-left: 14px;
+  background: #e6e6e6;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .t_unit_apply .introduce span {
+  float: right;
+  font-size: 14px;
+  margin-right: 10px;
+  color: #454646;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .t_unit_apply .introduce span img {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .t_unit_apply ul {
+  border-right: 1px solid #ccc;
+  margin-right: 0;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .t_unit_apply ul li {
+  float: left;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .t_unit_apply ul li span {
+  display: inline-block;
+  width: 118px;
+  padding-left: 14px;
+  background: #ebf3ff;
+  border-top: 1px solid #fff;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .t_unit_apply ul li input,
+.case_info .case_right .applyer_info .t_applyer_tab .t_unit_apply ul li select {
+  display: inline-block;
+  border: none;
+  outline: none;
+  width: 70%;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .t_unit_apply ul .special {
+  width: 100%;
+}
+.case_info .case_right .applyer_info .t_applyer_tab .add_apply {
+  margin-top: 10px;
+  text-align: center;
+  border: 1px solid #4d8cf4;
+  width: 97%;
+  line-height: 38px;
+  height: 38px;
+}
+.case_info .case_right .applyer_info .arbitrament_applyer_title {
+  margin-top: 10px;
+  width: 957px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  padding-left: 14px;
+  background: #4d8cf4;
+  border-right: 1px solid #ccc;
+}
+.case_info .case_right .applyer_info .arbitrament_apply {
+  margin-right: 30px;
+}
+.case_info .case_right .applyer_info .arbitrament_apply .introduce {
+  width: 957px;
+  height: 36px;
+  line-height: 36px;
+  color: #656565;
+  padding-left: 14px;
+  background: #e6e6e6;
+}
+.case_info .case_right .applyer_info .arbitrament_apply .introduce span {
+  float: right;
+  font-size: 14px;
+  margin-right: 10px;
+  color: #454646;
+}
+.case_info .case_right .applyer_info .arbitrament_apply .introduce span img {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+.case_info .case_right .applyer_info .arbitrament_apply ul {
+  border-right: 1px solid #ccc;
+  margin-right: 0;
+}
+.case_info .case_right .applyer_info .arbitrament_apply ul li {
+  float: left;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+.case_info .case_right .applyer_info .arbitrament_apply ul li span {
+  display: inline-block;
+  width: 118px;
+  padding-left: 14px;
+  background: #ebf3ff;
+  border-top: 1px solid #fff;
+}
+.case_info .case_right .applyer_info .arbitrament_apply ul li input,
+.case_info .case_right .applyer_info .arbitrament_apply ul li select {
+  display: inline-block;
+  border: none;
+  outline: none;
+  width: 70%;
+}
+.case_info .case_right .applyer_info .arbitrament_apply ul .t_arbitrament {
+  width: 100%;
+}
+.case_info .case_right .applyer_info .add_apply {
+  margin-top: 10px;
+  text-align: center;
+  border: 1px solid #4d8cf4;
+  width: 97%;
+  line-height: 38px;
+  height: 38px;
+  margin-bottom: 27px;
+}

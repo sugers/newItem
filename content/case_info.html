@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>案件信息</title>
+    <script src="../js/libs/jquery/jquery.min.js"></script>
+    <script src="../js/libs/case_info.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/case_info.css">
+</head>
+
+<body>
+    <div class="case_info">
+       <ul class="case_top" id="clear">
+           <li >筑牢人仲收字[2018]第51号</li>
+           <li >电子卷宗</li>
+           <li >电子文书</li>
+       </ul>
+        <!--筑牢人仲收字[2018]第51号区域-->
+          <div class="case_left">
+              <ul id="clear">
+                  <li>
+                      <a href="#base_info">基本信息</a>
+                  </li>
+                  <li>
+                      <a href="#reson_info">事实和理由</a>
+                  </li>
+                  <li>
+                    <a href="#applyer_title">申请人信息</a>
+                    
+                  </li>
+                  <li>
+                      <a href="#b_applyer_title">被申请人信息</a>
+                  </li>
+                  <li>
+                      <a href="#t_applyer_title">第三人信息</a>
+                  </li>
+                  <li>
+                      <a href="#arbitrament_applyer_title">仲裁申请</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="case_right">
+              <div class="case_right_top">
+                  <span>案件信息</span>
+                  <label for="" id="input_right">
+                      <input class="save" type="button" value="保存">
+                      <input class="return" type="button" value="回填">
+                  </label>
+              </div>
+        <style>
+            .case_right{position: absolute; top:48px;bottom: 0; left: 180px;overflow: hidden;}
+            .box {position: absolute;top: 52px;bottom: 0;overflow: auto;}
+        </style>
+            <div class="box">
+                <!--基本信息-->
+              <div class="base_info" id="base_info">  
+                 <div class="base_title">基本信息</div>
+                 <div class="base_content">
+                     <ul class="base_one">
+                         <li>
+                             <span>收案号</span>
+                             <input type="text" value="筑牢人仲收字[2018]第51号">
+                         </li>
+                         <li>
+                             <span>所属冲裁员</span>
+                             <input type="text">
+                        </li>
+                         <li>
+                            <span>仲裁申请日期</span>
+                            <select name="" id="">
+                                <option value="">2017/11/11</option>
+                            </select>
+                         </li>
+                     </ul>
+                     <ul class='base_two'>
+                           <li>
+                               <span>收案号</span>
+                             <input type="text" value="筑牢人仲收字[2018]第51号">
+                         </li>
+                         <li>
+                             <span>争议性质</span>
+                             <input type="text">
+                          </li>
+                         <li>
+                             <span>仲裁申请日期</span>
+                             <select name="" id="">
+                                 <option value="">
+                                     2017/11/11
+                                 </option>
+                             </select>
+                          </li>
+                     </ul>
+             
+                       <ul class="base_remenber"> 
+                           <li>
+                               <span>备注</span>
+                               <input type="text">
+                           </li>
+                       </ul>
+                         
+                 </div>
+              </div>
+
+        <!--事实理由-->
+            <div class="reson_info" id="reson_info">
+                 <div class="reson_title">事实和理由</div>
+                 <div class="reson_conten">
+                     <ul class="reson_remenber">
+                         <li>
+                            <span>事实和理由</span>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="请输入事实和理由"  ></textarea>
+                         </li>
+                     </ul>
+                 </div>
+            </div>
+
+     <!--申请人信息-->
+              
+            <div class="applyer_info">
+                  <div class="applyer_title" id="applyer_title">申请人信息
+                      <div class="z_title">
+                          <span class="personal">个人</span>
+                          <span>单位</span>
+                      </div>
+
+                  </div>
+                   <div class="applyer_tab">
+                        <!--个人申请人-->
+                          <div class="person_apply">
+                               <div class="introduce">个人申请人</div>
+                            <ul id='clear'>
+                                <li>
+                                    <span>姓名</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>性别</span>
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>出生日期</span>
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>民族</span>
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>原籍</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>联系电话 </span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>邮编</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>联系地址</span>
+                                    <input type="text">
+                                </li>
+                                 <li class="special">
+                                    <span>有效通讯地址</span>
+                                    <input type="text">
+                                </li>
+                            </ul>
+                          </div>
+                           <!--个人申请人2-->
+                          <div class="person_apply_two">
+                               <div class="introduce">个人申请人2
+                                   <span><img src="../img/delete.png" alt="" >删除</span>
+                               </div>
+                            <ul id='clear'>
+                                <li>
+                                    <span>姓名</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>性别</span>
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>出生日期</span>
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>民族</span>
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>原籍</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>联系电话 </span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>邮编</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>联系地址</span>
+                                    <input type="text">
+                                </li>
+                                 <li class="special">
+                                    <span>有效通讯地址</span>
+                                    <input type="text">
+                                </li>
+                            </ul>
+                          </div>
+
+                          <!--添加申请-->
+                          <div class="add_apply">
+                              添加申请人+
+                          </div>
+
+                          <!--单位申请人-->
+                          <div class="unit_apply">
+                               <div class="introduce">单位申请人</div>
+                            <ul id='clear'>
+                                <li>
+                                    <span>单位人名称</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>法定代表人姓名</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>法定代表人电话</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>法定代表人职务</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>单位类型</span>
+                                     <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>经济类型 </span>
+                                     <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>隶属类型</span>
+                                     <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>社会信用地址</span>
+                                    <input type="text">
+                                </li>
+                                 <li class="special">
+                                    <span>法定代表人住所</span>
+                                    <input type="text">
+                                </li>
+                            </ul>
+
+                          </div>
+                   </div>
+
+                   
+                <!--被申请人-->
+                   <div class="b_applyer_title" id="b_applyer_title">被申请人信息
+                      <div class="z_title">
+                          <span class="personal">个人</span>
+                          <span>单位</span>
+                      </div>
+
+                  </div>
+                   <div class="b_applyer_tab">
+                          <div class="person_apply">
+                               <div class="introduce">个人申请人</div>
+                            <ul id='clear'>
+                                <li>
+                                    <span>姓名</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>性别</span>
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>出生日期</span>
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>民族</span>
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>原籍</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>联系电话 </span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>邮编</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>联系地址</span>
+                                    <input type="text">
+                                </li>
+                                 <li class="special">
+                                    <span>有效通讯地址</span>
+                                    <input type="text">
+                                </li>
+                            </ul>
+                          </div>
+                            <!--单位被申请人-->
+                          <div class="b_unit_apply">
+                               <div class="introduce">单位被申请人</div>
+                            <ul id='clear'>
+                                <li>
+                                    <span>单位人名称</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>法定代表人姓名</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>法定代表人电话</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>法定代表人职务</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>单位类型</span>
+                                     <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>经济类型 </span>
+                                     <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>隶属类型</span>
+                                     <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>社会信用地址</span>
+                                    <input type="text">
+                                </li>
+                                 <li class="special">
+                                    <span>法定代表人住所</span>
+                                    <input type="text">
+                                </li>
+                            </ul>
+
+                          </div>
+                         <!--添加申请-->
+                          <div class="add_apply">
+                              添加申请人+
+                          </div>
+
+                   </div>  
+                <!--第三人信息-->
+                 <div class="t_applyer_title" id="t_applyer_title">第三人信息</div>
+                   <div class="t_applyer_tab">
+                          <div class="person_apply">
+                               <div class="introduce">个人第三人
+                                   <span><img src="../img/delete.png" alt="" >删除</span>
+                               </div>
+                            <ul id='clear'>
+                                <li>
+                                    <span>姓名</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>性别</span>
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>出生日期</span>
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>民族</span>
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>原籍</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>联系电话 </span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>邮编</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>联系地址</span>
+                                    <input type="text">
+                                </li>
+                                 <li class="special">
+                                    <span>有效通讯地址</span>
+                                    <input type="text">
+                                </li>
+                            </ul>
+                          </div>
+                          
+                         <!--添加申请-->
+                          <div class="add_apply">
+                              添加个人第三人+
+                          </div>
+
+
+                          <!--单位第三人-->
+                          <div class="t_unit_apply">
+                               <div class="introduce">单位第三人
+                                   <span><img src="../img/delete.png" alt="" >删除</span>
+                               </div>
+                            <ul id='clear'>
+                                <li>
+                                    <span>单位名称</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>法人姓名</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>法人联系电话</span>
+                                   <input type="text">
+                                </li>
+                                 <li>
+                                    <span>法人职务</span>
+                                    <input type="text">
+                                </li>
+                                 <li>
+                                    <span>单位类型</span>
+                                    <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>经济类型 </span>
+                                     <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>隶属类型</span>
+                                     <select name="" id="">
+                                        <option value=""></option>
+                                    </select>
+                                </li>
+                                 <li>
+                                    <span>社会信用代码</span>
+                                    <input type="text">
+                                </li>
+                                 <li class="special">
+                                    <span>法人住所</span>
+                                    <input type="text">
+                                </li>
+                            </ul>
+                          </div>
+                            <!--添加单位第三人-->
+                                <div class="add_apply">
+                                    添加单位第三人+
+                                </div>
+                   </div> 
+                    <!--仲裁申请-->
+                    <div class="arbitrament_applyer_title" id="arbitrament_applyer_title">仲裁请求</div>
+                    <div class="arbitrament_apply">
+                        <div class="introduce">仲裁请求
+                            <span><img src="../img/delete.png" alt="" >删除</span>
+                        </div>
+                      <ul id='clear'>
+                        <li>
+                            <span>仲裁请求类型</span>
+                            <select name="" id="">
+                                <option value=""></option>
+                            </select>
+                        </li>
+                            <li>
+                            <span>是否主要类型</span>
+                            <select name="" id="">
+                                <option value=""></option>
+                            </select>
+                        </li>
+                            <li class="t_arbitrament">
+                            <span>仲裁请求</span>
+                            <input type="text">
+                        </li>
+                    </ul>
+                </div>
+                    <!--添加仲裁申请-->
+                    <div class="add_apply">
+                        添加仲裁申请+
+                    </div>
+            </div>
+            </div>
+
+               <!---->
+
+          </div>
+
+        <!--end-->
+    </div>
+</body>
+</html>
