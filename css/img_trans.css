@@ -21,6 +21,7 @@
   background: #4d8cf4;
 }
 .img_trans .trans_left {
+  border-right: 2px solid #ccc;
   float: left;
   width: 50%;
   background: #feffff;
@@ -73,6 +74,7 @@
   float: right;
   width: 50%;
   background: #feffff;
+  margin-right: -2px;
 }
 .img_trans .trans_right .right_top {
   margin-left: 20px;
