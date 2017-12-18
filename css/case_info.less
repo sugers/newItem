@@ -1,3 +1,39 @@
+@baseColor: #4c8bf4;
+.widthMargin {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 50px;
+    line-height: 50px;
+    background: @baseColor;
+    color: #fff;
+    .main {
+        .widthMargin;
+        .userMsg {
+            text-align: right;
+            line-height: 20px;
+            font-size: 12px;
+            margin-top: 4px;
+            span {
+                padding-left: 20px;
+            }
+            span.user {
+                background: url('../img/icon-user.png') left center no-repeat;
+                margin-right: 20px;
+            }
+            span.logOut {
+                background: url('../img/icon-logOut.png') left center no-repeat;
+                margin-left: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
 .case_info {
     width: 1200px;
     margin: 0 auto;
@@ -58,12 +94,12 @@
         bottom: 0;
         left: 180px;
         overflow: hidden;
-         .box {
-                    position: absolute;
-                    top: 52px;
-                    bottom: 0;
-                    overflow: auto;
-                }
+        .box {
+            position: absolute;
+            top: 52px;
+            bottom: 0;
+            overflow: auto;
+        }
         .case_right_top {
             width: 1000px;
             height: 52px;
@@ -138,7 +174,6 @@
                     width: 97%;
                     background: #fff;
                     border-right: 1px solid #ccc;
-                    
                     li {
                         height: 60px;
                         span {
@@ -151,7 +186,7 @@
                             background: #ebf3ff;
                             border-top: 1px solid #fff;
                         }
-                            textarea {
+                        textarea {
                             display: inline-block;
                             border: none;
                             outline: none;
@@ -236,7 +271,7 @@
                     }
                     .personal {
                         background: #fff;
-                        color:#4d8cf4;
+                        color: #4d8cf4;
                         border-right: 1px solid #fff;
                     }
                 }
@@ -339,8 +374,7 @@
                             width: 100%;
                         }
                     }
-                }
-                 //单位申请人
+                } //单位申请人
                 .unit_apply {
                     display: none;
                     margin-right: 30px;
@@ -411,7 +445,7 @@
                     }
                     .personal {
                         background: #fff;
-                        color:#4d8cf4;
+                        color: #4d8cf4;
                         border-right: 1px solid #fff;
                     }
                 }
@@ -534,7 +568,7 @@
                     }
                     .personal {
                         background: #fff;
-                        color:#4d8cf4;
+                        color: #4d8cf4;
                         border-right: 1px solid #fff;
                     }
                 }

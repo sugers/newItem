@@ -1,3 +1,39 @@
+    @baseColor: #4c8bf4;
+    .widthMargin {
+        width: 1200px;
+        margin: 0 auto;
+    }
+
+    .header {
+        height: 50px;
+        line-height: 50px;
+        background: @baseColor;
+        color: #fff;
+        .main {
+            .widthMargin;
+            .userMsg {
+                text-align: right;
+                line-height: 20px;
+                font-size: 12px;
+                margin-top: 4px;
+                span {
+                    padding-left: 20px;
+                }
+                span.user {
+                    background: url('../img/icon-user.png') left center no-repeat;
+                    margin-right: 20px;
+                }
+                span.logOut {
+                    background: url('../img/icon-logOut.png') left center no-repeat;
+                    margin-left: 20px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
     .img_trans {
         width: 100%;
         max-width: 1326px;
@@ -105,7 +141,7 @@
                     li+li {
                         margin-left: 30px;
                     }
-                    .list{
+                    .list {
                         img {
                             margin-left: 20px;
                         }

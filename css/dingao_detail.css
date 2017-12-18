@@ -1,3 +1,37 @@
+.widthMargin {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  height: 50px;
+  line-height: 50px;
+  background: #4c8bf4;
+  color: #fff;
+}
+.header .main {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header .main .userMsg {
+  text-align: right;
+  line-height: 20px;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.header .main .userMsg span {
+  padding-left: 20px;
+}
+.header .main .userMsg span.user {
+  background: url('../img/icon-user.png') left center no-repeat;
+  margin-right: 20px;
+}
+.header .main .userMsg span.logOut {
+  background: url('../img/icon-logOut.png') left center no-repeat;
+  margin-left: 20px;
+}
+.header .main .userMsg p {
+  font-size: 14px;
+}
 .dingao_detail {
   width: 1200px;
   margin: 0 auto;
@@ -22,7 +56,7 @@
   display: inline-block;
   position: absolute;
   font-size: 16px;
-  top: 48px;
+  top: 98px;
   width: 240px;
   bottom: 0;
   background: #343e4a;

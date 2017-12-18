@@ -21,9 +21,9 @@ $(function () {
             $('.finalize_content').css('display', 'none')
             $('.recycle_content').css('display', 'none')
              $('.shenxiao').css('display','none')
-            $('.huishouzhan').css('display','block')
+            $('.huishouzhan').css('display','none')
             $('.w_dingao').css('display','none')
-            $('.y_dingao').css('display','none')
+            $('.y_dingao').css('display','block')
         })
         $('.deal_text ul').find('.finalize').click(function () {
             $(this).css('background', '#1992d4').css('color', '#fff').siblings().css('background', '#fff').css('color', '#000')
@@ -43,9 +43,9 @@ $(function () {
             $('.finalize_content').css('display', 'none')
             $('.recycle_content').css('display', 'block')
              $('.shenxiao').css('display','none')
-            $('.huishouzhan').css('display','none')
+            $('.huishouzhan').css('display','block')
             $('.w_dingao').css('display','none')
-            $('.y_dingao').css('display','block')
+            $('.y_dingao').css('display','none')
         })
     }
 
