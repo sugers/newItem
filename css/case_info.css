@@ -35,9 +35,13 @@
   color: #fff;
   border-bottom: 1px solid #1b2128;
 }
+.case_info .case_left ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
 .case_info .case_left ul li:hover {
   background: #576171;
-  cursor: pointer;
 }
 .case_info .case_right {
   width: 1000px;
@@ -46,6 +50,17 @@
   line-height: 52px;
   border: none;
   float: right;
+  position: absolute;
+  top: 48px;
+  bottom: 0;
+  left: 180px;
+  overflow: hidden;
+}
+.case_info .case_right .box {
+  position: absolute;
+  top: 52px;
+  bottom: 0;
+  overflow: auto;
 }
 .case_info .case_right .case_right_top {
   width: 1000px;
@@ -105,7 +120,8 @@
   display: inline-block;
   border: none;
   outline: none;
-  width: 70%;
+  width: 50%;
+  padding-left: 14px;
 }
 .case_info .case_right .base_info .base_content ul li input {
   color: #6e9ef5;
@@ -123,6 +139,7 @@
   height: 60px;
 }
 .case_info .case_right .base_info .base_content .base_remenber li span {
+  float: left;
   display: inline-block;
   width: 118px;
   height: 60px;
@@ -130,6 +147,15 @@
   padding-left: 14px;
   background: #ebf3ff;
   border-top: 1px solid #fff;
+}
+.case_info .case_right .base_info .base_content .base_remenber li textarea {
+  display: inline-block;
+  border: none;
+  outline: none;
+  width: 85%;
+  height: 100%;
+  resize: none;
+  overflow: visible;
 }
 .case_info .case_right .reson_info {
   float: left;
@@ -205,6 +231,8 @@
   text-align: center;
 }
 .case_info .case_right .applyer_info .applyer_title .z_title .personal {
+  background: #fff;
+  color: #4d8cf4;
   border-right: 1px solid #fff;
 }
 .case_info .case_right .applyer_info .applyer_tab .person_apply {
@@ -375,6 +403,8 @@
   text-align: center;
 }
 .case_info .case_right .applyer_info .b_applyer_title .z_title .personal {
+  background: #fff;
+  color: #4d8cf4;
   border-right: 1px solid #fff;
 }
 .case_info .case_right .applyer_info .b_applyer_tab .person_apply {
@@ -493,6 +523,8 @@
   text-align: center;
 }
 .case_info .case_right .applyer_info .t_applyer_title .z_title .personal {
+  background: #fff;
+  color: #4d8cf4;
   border-right: 1px solid #fff;
 }
 .case_info .case_right .applyer_info .t_applyer_tab .person_apply {

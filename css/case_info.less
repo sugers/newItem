@@ -19,8 +19,7 @@
         li:hover {
             background: #4d8cf4;
         }
-    }
-    // 左边栏
+    } // 左边栏
     .case_left {
         display: inline-block;
         height: 2307px;
@@ -36,64 +35,229 @@
                 text-align: center;
                 color: #fff;
                 border-bottom: 1px solid #1b2128;
+                a {
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                }
             }
             li:hover {
                 background: #576171;
-                cursor: pointer;
             }
         }
-    }
-        // 右边content
-        .case_right {
-            width: 1000px;
-            padding-left: 20px;
-            background: #fff;
-            line-height: 52px;
-            border: none;
-            float: right;
-            .case_right_top {
-                width: 1000px;
-                height: 52px;
-                line-height: 52px;
-                #input_right {
+    } // 右边content
+    .case_right {
+        width: 1000px;
+        padding-left: 20px;
+        background: #fff;
+        line-height: 52px;
+        border: none;
+        float: right;
+        position: absolute;
+        top: 48px;
+        bottom: 0;
+        left: 180px;
+        overflow: hidden;
+         .box {
                     position: absolute;
-                    right: 30px;
-                    .save,
-                    .return {
-                        font-size: 16px;
-                        width: 80px;
-                        height: 30px;
-                        border: none;
-                        color: #fff;
-                    }
-                    .save {
-                        background: #f78723;
-                    }
-                    .return {
-                        background: #4d8cf4;
-                    }
+                    top: 52px;
+                    bottom: 0;
+                    overflow: auto;
                 }
-                span {
-                    padding-left: 14px;
-                    font-size: 20px;
-                }
-            } //基本信息
-            .base_info {
-                .base_title {
-                    width: 956px;
-                    height: 36px;
-                    line-height: 36px;
+        .case_right_top {
+            width: 1000px;
+            height: 52px;
+            line-height: 52px;
+            #input_right {
+                position: absolute;
+                right: 30px;
+                .save,
+                .return {
+                    font-size: 16px;
+                    width: 80px;
+                    height: 30px;
+                    border: none;
                     color: #fff;
-                    padding-left: 14px;
+                }
+                .save {
+                    background: #f78723;
+                }
+                .return {
                     background: #4d8cf4;
+                }
+            }
+            span {
+                padding-left: 14px;
+                font-size: 20px;
+            }
+        } //基本信息
+        .base_info {
+            .base_title {
+                width: 956px;
+                height: 36px;
+                line-height: 36px;
+                color: #fff;
+                padding-left: 14px;
+                background: #4d8cf4;
+                border-right: 1px solid #ccc;
+            }
+            .base_content {
+                ul {
+                    float: left;
+                    width: 50%;
+                    li {
+                        width: 100%;
+                        height: 40px;
+                        line-height: 40px;
+                        border-bottom: 1px solid #ccc;
+                        span {
+                            display: inline-block;
+                            width: 118px;
+                            padding-left: 14px;
+                            background: #ebf3ff;
+                            border-top: 1px solid #fff;
+                        }
+                        input,
+                        select {
+                            display: inline-block;
+                            border: none;
+                            outline: none;
+                            width: 50%;
+                            padding-left: 14px;
+                        }
+                        input {
+                            color: #6e9ef5;
+                        }
+                    }
+                }
+                .base_two {
+                    width: 47%;
                     border-right: 1px solid #ccc;
                 }
-                .base_content {
-                    ul {
+                .base_remenber {
+                    width: 97%;
+                    background: #fff;
+                    border-right: 1px solid #ccc;
+                    
+                    li {
+                        height: 60px;
+                        span {
+                            float: left;
+                            display: inline-block;
+                            width: 118px;
+                            height: 60px;
+                            line-height: 60px;
+                            padding-left: 14px;
+                            background: #ebf3ff;
+                            border-top: 1px solid #fff;
+                        }
+                            textarea {
+                            display: inline-block;
+                            border: none;
+                            outline: none;
+                            width: 85%;
+                            height: 100%;
+                            resize: none;
+                            overflow: visible;
+                        }
+                    }
+                }
+            }
+        } //事实和理由
+        .reson_info {
+            float: left;
+            margin-top: 20px;
+            .reson_title {
+                width: 957px;
+                height: 36px;
+                line-height: 36px;
+                color: #fff;
+                padding-left: 14px;
+                background: #4d8cf4;
+                border-right: 1px solid #ccc;
+            }
+            .reson_remenber {
+                background: #fff;
+                border-right: 1px solid #ccc;
+                li {
+                    height: 60px;
+                    width: 100%;
+                    border-bottom: 1px solid #ccc;
+                    span {
                         float: left;
-                        width: 50%;
+                        display: inline-block;
+                        width: 118px;
+                        height: 100%;
+                        line-height: 60px;
+                        padding-left: 14px;
+                        background: #ebf3ff;
+                        border-top: 1px solid #fff;
+                    }
+                    textarea {
+                        display: inline-block;
+                        border: none;
+                        outline: none;
+                        width: 85%;
+                        height: 100%;
+                        resize: none;
+                        overflow: visible;
+                    }
+                }
+            }
+        } //申请人信息
+        .applyer_info {
+            float: left;
+            margin-top: 20px;
+            position: relative;
+            .applyer_title {
+                width: 957px;
+                height: 36px;
+                line-height: 36px;
+                color: #fff;
+                padding-left: 14px;
+                background: #4d8cf4;
+                border-right: 1px solid #ccc;
+                .z_title {
+                    position: absolute;
+                    height: 25px;
+                    line-height: 25px;
+                    width: 100px;
+                    color: #fff;
+                    background: #4d8cf4;
+                    border: 1px solid #fff;
+                    left: 105px;
+                    top: 0;
+                    margin-top: 5px;
+                    span {
+                        font-size: 14px;
+                        display: inline-block;
+                        width: 47%;
+                        text-align: center;
+                    }
+                    .personal {
+                        background: #fff;
+                        color:#4d8cf4;
+                        border-right: 1px solid #fff;
+                    }
+                }
+            } //个人申请信息
+            .applyer_tab {
+                .person_apply {
+                    margin-right: 30px;
+                    .introduce {
+                        width: 957px;
+                        height: 36px;
+                        line-height: 36px;
+                        color: #656565;
+                        padding-left: 14px;
+                        background: #e6e6e6;
+                    }
+                    ul {
+                        border-right: 1px solid #ccc;
+                        margin-right: 0;
                         li {
-                            width: 100%;
+                            float: left;
+                            width: 50%;
                             height: 40px;
                             line-height: 40px;
                             border-bottom: 1px solid #ccc;
@@ -111,534 +275,272 @@
                                 outline: none;
                                 width: 70%;
                             }
-                            input {
-                                color: #6e9ef5;
+                        }
+                        .special {
+                            width: 100%;
+                        }
+                    }
+                } //添加申请人
+                .add_apply {
+                    margin-top: 20px;
+                    text-align: center;
+                    border: 1px solid #4d8cf4;
+                    width: 97%;
+                    line-height: 38px;
+                    height: 38px;
+                }
+                .person_apply_two {
+                    margin-top: 20px;
+                    margin-right: 30px;
+                    .introduce {
+                        width: 957px;
+                        height: 36px;
+                        line-height: 36px;
+                        color: #656565;
+                        padding-left: 14px;
+                        background: #e6e6e6;
+                        span {
+                            float: right;
+                            font-size: 14px;
+                            margin-right: 10px;
+                            color: #454646;
+                            img {
+                                width: 14px;
+                                height: 14px;
+                                vertical-align: middle;
                             }
                         }
                     }
-                    .base_two {
-                        width: 47%;
+                    ul {
                         border-right: 1px solid #ccc;
-                    }
-                    .base_remenber {
-                        width: 97%;
-                        background: #fff;
-                        border-right: 1px solid #ccc;
+                        margin-right: 0;
                         li {
-                            height: 60px;
+                            float: left;
+                            width: 50%;
+                            height: 40px;
+                            line-height: 40px;
+                            border-bottom: 1px solid #ccc;
                             span {
                                 display: inline-block;
                                 width: 118px;
-                                height: 60px;
-                                line-height: 60px;
                                 padding-left: 14px;
                                 background: #ebf3ff;
                                 border-top: 1px solid #fff;
                             }
+                            input,
+                            select {
+                                display: inline-block;
+                                border: none;
+                                outline: none;
+                                width: 70%;
+                            }
+                        }
+                        .special {
+                            width: 100%;
                         }
                     }
                 }
-            } //事实和理由
-            .reson_info {
-                float: left;
-                margin-top: 20px;
-                .reson_title {
-                    width: 957px;
-                    height: 36px;
-                    line-height: 36px;
-                    color: #fff;
-                    padding-left: 14px;
-                    background: #4d8cf4;
-                    border-right: 1px solid #ccc;
-                }
-                .reson_remenber {
-                    background: #fff;
-                    border-right: 1px solid #ccc;
-                    li {
-                        height: 60px;
-                        width: 100%;
-                        border-bottom: 1px solid #ccc;
-                        span {
+                 //单位申请人
+                .unit_apply {
+                    display: none;
+                    margin-right: 30px;
+                    .introduce {
+                        width: 957px;
+                        height: 36px;
+                        line-height: 36px;
+                        color: #656565;
+                        padding-left: 14px;
+                        background: #e6e6e6;
+                    }
+                    ul {
+                        border-right: 1px solid #ccc;
+                        margin-right: 0;
+                        li {
                             float: left;
-                            display: inline-block;
-                            width: 118px;
-                            height: 100%;
-                            line-height: 60px;
-                            padding-left: 14px;
-                            background: #ebf3ff;
-                            border-top: 1px solid #fff;
+                            width: 50%;
+                            height: 40px;
+                            line-height: 40px;
+                            border-bottom: 1px solid #ccc;
+                            span {
+                                display: inline-block;
+                                width: 118px;
+                                padding-left: 14px;
+                                background: #ebf3ff;
+                                border-top: 1px solid #fff;
+                            }
+                            input,
+                            select {
+                                display: inline-block;
+                                border: none;
+                                outline: none;
+                                width: 70%;
+                            }
                         }
-                        textarea {
-                            display: inline-block;
-                            border: none;
-                            outline: none;
-                            width: 85%;
-                            height: 100%;
-                            resize: none;
-                            overflow: visible;
+                        .special {
+                            width: 100%;
                         }
                     }
                 }
-            } //申请人信息
-            .applyer_info {
-                float: left;
-                margin-top: 20px;
+            } //被申请人信息
+            .b_applyer_title {
                 position: relative;
-                .applyer_title {
-                    width: 957px;
-                    height: 36px;
-                    line-height: 36px;
+                margin-top: 20px;
+                width: 957px;
+                height: 36px;
+                line-height: 36px;
+                color: #fff;
+                padding-left: 14px;
+                background: #4d8cf4;
+                border-right: 1px solid #ccc;
+                .z_title {
+                    position: absolute;
+                    height: 25px;
+                    line-height: 25px;
+                    width: 100px;
                     color: #fff;
-                    padding-left: 14px;
                     background: #4d8cf4;
-                    border-right: 1px solid #ccc;
-                    .z_title {
-                        position: absolute;
-                        height: 25px;
-                        line-height: 25px;
-                        width: 100px;
-                        color: #fff;
-                        background: #4d8cf4;
-                        border: 1px solid #fff;
-                        left: 105px;
-                        top: 0;
-                        margin-top: 5px;
-                        span {
-                            font-size: 14px;
-                            display: inline-block;
-                            width: 47%;
-                            text-align: center;
-                        }
-                        .personal {
-                            border-right: 1px solid #fff;
-                        }
-                    }
-                } //个人申请信息
-                .applyer_tab {
-                    .person_apply {
-                        margin-right: 30px;
-                        .introduce {
-                            width: 957px;
-                            height: 36px;
-                            line-height: 36px;
-                            color: #656565;
-                            padding-left: 14px;
-                            background: #e6e6e6;
-                        }
-                        ul {
-                            border-right: 1px solid #ccc;
-                            margin-right: 0;
-                            li {
-                                float: left;
-                                width: 50%;
-                                height: 40px;
-                                line-height: 40px;
-                                border-bottom: 1px solid #ccc;
-                                span {
-                                    display: inline-block;
-                                    width: 118px;
-                                    padding-left: 14px;
-                                    background: #ebf3ff;
-                                    border-top: 1px solid #fff;
-                                }
-                                input,
-                                select {
-                                    display: inline-block;
-                                    border: none;
-                                    outline: none;
-                                    width: 70%;
-                                }
-                            }
-                            .special {
-                                width: 100%;
-                            }
-                        }
-                    } //添加申请人
-                    .add_apply {
-                        margin-top: 20px;
+                    border: 1px solid #fff;
+                    left: 120px;
+                    top: 0;
+                    margin-top: 5px;
+                    span {
+                        font-size: 14px;
+                        display: inline-block;
+                        width: 47%;
                         text-align: center;
-                        border: 1px solid #4d8cf4;
-                        width: 97%;
-                        line-height: 38px;
-                        height: 38px;
                     }
-                    .person_apply_two {
-                        margin-top: 20px;
-                        margin-right: 30px;
-                        .introduce {
-                            width: 957px;
-                            height: 36px;
-                            line-height: 36px;
-                            color: #656565;
-                            padding-left: 14px;
-                            background: #e6e6e6;
+                    .personal {
+                        background: #fff;
+                        color:#4d8cf4;
+                        border-right: 1px solid #fff;
+                    }
+                }
+            }
+            .b_applyer_tab {
+                .person_apply {
+                    //   display:none;
+                    margin-right: 30px;
+                    .introduce {
+                        width: 957px;
+                        height: 36px;
+                        line-height: 36px;
+                        color: #656565;
+                        padding-left: 14px;
+                        background: #e6e6e6;
+                    }
+                    ul {
+                        border-right: 1px solid #ccc;
+                        margin-right: 0;
+                        li {
+                            float: left;
+                            width: 50%;
+                            height: 40px;
+                            line-height: 40px;
+                            border-bottom: 1px solid #ccc;
                             span {
-                                float: right;
-                                font-size: 14px;
-                                margin-right: 10px;
-                                color: #454646;
-                                img {
-                                    width: 14px;
-                                    height: 14px;
-                                    vertical-align: middle;
-                                }
+                                display: inline-block;
+                                width: 118px;
+                                padding-left: 14px;
+                                background: #ebf3ff;
+                                border-top: 1px solid #fff;
+                            }
+                            input,
+                            select {
+                                display: inline-block;
+                                border: none;
+                                outline: none;
+                                width: 70%;
                             }
                         }
-                        ul {
-                            border-right: 1px solid #ccc;
-                            margin-right: 0;
-                            li {
-                                float: left;
-                                width: 50%;
-                                height: 40px;
-                                line-height: 40px;
-                                border-bottom: 1px solid #ccc;
-                                span {
-                                    display: inline-block;
-                                    width: 118px;
-                                    padding-left: 14px;
-                                    background: #ebf3ff;
-                                    border-top: 1px solid #fff;
-                                }
-                                input,
-                                select {
-                                    display: inline-block;
-                                    border: none;
-                                    outline: none;
-                                    width: 70%;
-                                }
-                            }
-                            .special {
-                                width: 100%;
-                            }
-                        }
-                    } //单位申请人
-                    .unit_apply {
-                        display: none;
-                        margin-right: 30px;
-                        .introduce {
-                            width: 957px;
-                            height: 36px;
-                            line-height: 36px;
-                            color: #656565;
-                            padding-left: 14px;
-                            background: #e6e6e6;
-                        }
-                        ul {
-                            border-right: 1px solid #ccc;
-                            margin-right: 0;
-                            li {
-                                float: left;
-                                width: 50%;
-                                height: 40px;
-                                line-height: 40px;
-                                border-bottom: 1px solid #ccc;
-                                span {
-                                    display: inline-block;
-                                    width: 118px;
-                                    padding-left: 14px;
-                                    background: #ebf3ff;
-                                    border-top: 1px solid #fff;
-                                }
-                                input,
-                                select {
-                                    display: inline-block;
-                                    border: none;
-                                    outline: none;
-                                    width: 70%;
-                                }
-                            }
-                            .special {
-                                width: 100%;
-                            }
+                        .special {
+                            width: 100%;
                         }
                     }
-                } //被申请人信息
-                .b_applyer_title {
-                    position: relative;
+                } //单位被申请人
+                .b_unit_apply {
+                    display: none;
+                    margin-right: 30px;
+                    .introduce {
+                        width: 957px;
+                        height: 36px;
+                        line-height: 36px;
+                        color: #656565;
+                        padding-left: 14px;
+                        background: #e6e6e6;
+                    }
+                    ul {
+                        border-right: 1px solid #ccc;
+                        margin-right: 0;
+                        li {
+                            float: left;
+                            width: 50%;
+                            height: 40px;
+                            line-height: 40px;
+                            border-bottom: 1px solid #ccc;
+                            span {
+                                display: inline-block;
+                                width: 118px;
+                                padding-left: 14px;
+                                background: #ebf3ff;
+                                border-top: 1px solid #fff;
+                            }
+                            input,
+                            select {
+                                display: inline-block;
+                                border: none;
+                                outline: none;
+                                width: 70%;
+                            }
+                        }
+                        .special {
+                            width: 100%;
+                        }
+                    }
+                } //添加申请人
+                .add_apply {
                     margin-top: 20px;
-                    width: 957px;
-                    height: 36px;
-                    line-height: 36px;
+                    text-align: center;
+                    border: 1px solid #4d8cf4;
+                    width: 97%;
+                    line-height: 38px;
+                    height: 38px;
+                }
+            } //第三人信息
+            .t_applyer_title {
+                margin-top: 20px;
+                width: 957px;
+                height: 36px;
+                line-height: 36px;
+                color: #fff;
+                padding-left: 14px;
+                background: #4d8cf4;
+                border-right: 1px solid #ccc;
+                .z_title {
+                    position: absolute;
+                    height: 25px;
+                    line-height: 25px;
+                    width: 100px;
                     color: #fff;
-                    padding-left: 14px;
                     background: #4d8cf4;
-                    border-right: 1px solid #ccc;
-                    .z_title {
-                        position: absolute;
-                        height: 25px;
-                        line-height: 25px;
-                        width: 100px;
-                        color: #fff;
-                        background: #4d8cf4;
-                        border: 1px solid #fff;
-                        left: 120px;
-                        top: 0;
-                        margin-top: 5px;
-                        span {
-                            font-size: 14px;
-                            display: inline-block;
-                            width: 47%;
-                            text-align: center;
-                        }
-                        .personal {
-                            border-right: 1px solid #fff;
-                        }
+                    border: 1px solid #fff;
+                    left: 105px;
+                    top: 0;
+                    margin-top: 5px;
+                    span {
+                        font-size: 14px;
+                        display: inline-block;
+                        width: 47%;
+                        text-align: center;
+                    }
+                    .personal {
+                        background: #fff;
+                        color:#4d8cf4;
+                        border-right: 1px solid #fff;
                     }
                 }
-                .b_applyer_tab {
-                    .person_apply {
-                        //   display:none;
-                        margin-right: 30px;
-                        .introduce {
-                            width: 957px;
-                            height: 36px;
-                            line-height: 36px;
-                            color: #656565;
-                            padding-left: 14px;
-                            background: #e6e6e6;
-                        }
-                        ul {
-                            border-right: 1px solid #ccc;
-                            margin-right: 0;
-                            li {
-                                float: left;
-                                width: 50%;
-                                height: 40px;
-                                line-height: 40px;
-                                border-bottom: 1px solid #ccc;
-                                span {
-                                    display: inline-block;
-                                    width: 118px;
-                                    padding-left: 14px;
-                                    background: #ebf3ff;
-                                    border-top: 1px solid #fff;
-                                }
-                                input,
-                                select {
-                                    display: inline-block;
-                                    border: none;
-                                    outline: none;
-                                    width: 70%;
-                                }
-                            }
-                            .special {
-                                width: 100%;
-                            }
-                        }
-                    } //单位被申请人
-                    .b_unit_apply {
-                        display: none;
-                        margin-right: 30px;
-                        .introduce {
-                            width: 957px;
-                            height: 36px;
-                            line-height: 36px;
-                            color: #656565;
-                            padding-left: 14px;
-                            background: #e6e6e6;
-                        }
-                        ul {
-                            border-right: 1px solid #ccc;
-                            margin-right: 0;
-                            li {
-                                float: left;
-                                width: 50%;
-                                height: 40px;
-                                line-height: 40px;
-                                border-bottom: 1px solid #ccc;
-                                span {
-                                    display: inline-block;
-                                    width: 118px;
-                                    padding-left: 14px;
-                                    background: #ebf3ff;
-                                    border-top: 1px solid #fff;
-                                }
-                                input,
-                                select {
-                                    display: inline-block;
-                                    border: none;
-                                    outline: none;
-                                    width: 70%;
-                                }
-                            }
-                            .special {
-                                width: 100%;
-                            }
-                        }
-                    } //添加申请人
-                    .add_apply {
-                        margin-top: 20px;
-                        text-align: center;
-                        border: 1px solid #4d8cf4;
-                        width: 97%;
-                        line-height: 38px;
-                        height: 38px;
-                    }
-                } //第三人信息
-                .t_applyer_title {
-                    margin-top: 20px;
-                    width: 957px;
-                    height: 36px;
-                    line-height: 36px;
-                    color: #fff;
-                    padding-left: 14px;
-                    background: #4d8cf4;
-                    border-right: 1px solid #ccc;
-                    .z_title {
-                        position: absolute;
-                        height: 25px;
-                        line-height: 25px;
-                        width: 100px;
-                        color: #fff;
-                        background: #4d8cf4;
-                        border: 1px solid #fff;
-                        left: 105px;
-                        top: 0;
-                        margin-top: 5px;
-                        span {
-                            font-size: 14px;
-                            display: inline-block;
-                            width: 47%;
-                            text-align: center;
-                        }
-                        .personal {
-                            border-right: 1px solid #fff;
-                        }
-                    }
-                }
-                .t_applyer_tab {
-                    .person_apply {
-                        //   display:none;
-                        margin-right: 30px;
-                        .introduce {
-                            width: 957px;
-                            height: 36px;
-                            line-height: 36px;
-                            color: #656565;
-                            padding-left: 14px;
-                            background: #e6e6e6;
-                            span {
-                                float: right;
-                                font-size: 14px;
-                                margin-right: 10px;
-                                color: #454646;
-                                img {
-                                    width: 14px;
-                                    height: 14px;
-                                    vertical-align: middle;
-                                }
-                            }
-                        }
-                        ul {
-                            border-right: 1px solid #ccc;
-                            margin-right: 0;
-                            li {
-                                float: left;
-                                width: 50%;
-                                height: 40px;
-                                line-height: 40px;
-                                border-bottom: 1px solid #ccc;
-                                span {
-                                    display: inline-block;
-                                    width: 118px;
-                                    padding-left: 14px;
-                                    background: #ebf3ff;
-                                    border-top: 1px solid #fff;
-                                }
-                                input,
-                                select {
-                                    display: inline-block;
-                                    border: none;
-                                    outline: none;
-                                    width: 70%;
-                                }
-                            }
-                            .special {
-                                width: 100%;
-                            }
-                        }
-                    } //添加申请人
-                    .add_apply {
-                        margin-top: 20px;
-                        text-align: center;
-                        border: 1px solid #4d8cf4;
-                        width: 97%;
-                        line-height: 38px;
-                        height: 38px;
-                    } //   单位第三人
-                    .t_unit_apply {
-                        //   display:none;
-                        margin-top: 20px;
-                        margin-right: 30px;
-                        .introduce {
-                            width: 957px;
-                            height: 36px;
-                            line-height: 36px;
-                            color: #656565;
-                            padding-left: 14px;
-                            background: #e6e6e6;
-                            span {
-                                float: right;
-                                font-size: 14px;
-                                margin-right: 10px;
-                                color: #454646;
-                                img {
-                                    width: 14px;
-                                    height: 14px;
-                                    vertical-align: middle;
-                                }
-                            }
-                        }
-                        ul {
-                            border-right: 1px solid #ccc;
-                            margin-right: 0;
-                            li {
-                                float: left;
-                                width: 50%;
-                                height: 40px;
-                                line-height: 40px;
-                                border-bottom: 1px solid #ccc;
-                                span {
-                                    display: inline-block;
-                                    width: 118px;
-                                    padding-left: 14px;
-                                    background: #ebf3ff;
-                                    border-top: 1px solid #fff;
-                                }
-                                input,
-                                select {
-                                    display: inline-block;
-                                    border: none;
-                                    outline: none;
-                                    width: 70%;
-                                }
-                            }
-                            .special {
-                                width: 100%;
-                            }
-                        }
-                    } //添加单位第三人
-                    .add_apply {
-                        margin-top: 10px;
-                        text-align: center;
-                        border: 1px solid #4d8cf4;
-                        width: 97%;
-                        line-height: 38px;
-                        height: 38px;
-                    }
-                } //   仲裁申请
-                .arbitrament_applyer_title {
-                    margin-top: 10px;
-                    width: 957px;
-                    height: 36px;
-                    line-height: 36px;
-                    color: #fff;
-                    padding-left: 14px;
-                    background: #4d8cf4;
-                    border-right: 1px solid #ccc;
-                }
-                .arbitrament_apply {
+            }
+            .t_applyer_tab {
+                .person_apply {
                     //   display:none;
                     margin-right: 30px;
                     .introduce {
@@ -684,11 +586,71 @@
                                 width: 70%;
                             }
                         }
-                        .t_arbitrament {
+                        .special {
                             width: 100%;
                         }
                     }
-                } //添加仲裁申请
+                } //添加申请人
+                .add_apply {
+                    margin-top: 20px;
+                    text-align: center;
+                    border: 1px solid #4d8cf4;
+                    width: 97%;
+                    line-height: 38px;
+                    height: 38px;
+                } //   单位第三人
+                .t_unit_apply {
+                    //   display:none;
+                    margin-top: 20px;
+                    margin-right: 30px;
+                    .introduce {
+                        width: 957px;
+                        height: 36px;
+                        line-height: 36px;
+                        color: #656565;
+                        padding-left: 14px;
+                        background: #e6e6e6;
+                        span {
+                            float: right;
+                            font-size: 14px;
+                            margin-right: 10px;
+                            color: #454646;
+                            img {
+                                width: 14px;
+                                height: 14px;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                    ul {
+                        border-right: 1px solid #ccc;
+                        margin-right: 0;
+                        li {
+                            float: left;
+                            width: 50%;
+                            height: 40px;
+                            line-height: 40px;
+                            border-bottom: 1px solid #ccc;
+                            span {
+                                display: inline-block;
+                                width: 118px;
+                                padding-left: 14px;
+                                background: #ebf3ff;
+                                border-top: 1px solid #fff;
+                            }
+                            input,
+                            select {
+                                display: inline-block;
+                                border: none;
+                                outline: none;
+                                width: 70%;
+                            }
+                        }
+                        .special {
+                            width: 100%;
+                        }
+                    }
+                } //添加单位第三人
                 .add_apply {
                     margin-top: 10px;
                     text-align: center;
@@ -696,8 +658,78 @@
                     width: 97%;
                     line-height: 38px;
                     height: 38px;
-                    margin-bottom: 27px;
                 }
+            } //   仲裁申请
+            .arbitrament_applyer_title {
+                margin-top: 10px;
+                width: 957px;
+                height: 36px;
+                line-height: 36px;
+                color: #fff;
+                padding-left: 14px;
+                background: #4d8cf4;
+                border-right: 1px solid #ccc;
+            }
+            .arbitrament_apply {
+                //   display:none;
+                margin-right: 30px;
+                .introduce {
+                    width: 957px;
+                    height: 36px;
+                    line-height: 36px;
+                    color: #656565;
+                    padding-left: 14px;
+                    background: #e6e6e6;
+                    span {
+                        float: right;
+                        font-size: 14px;
+                        margin-right: 10px;
+                        color: #454646;
+                        img {
+                            width: 14px;
+                            height: 14px;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+                ul {
+                    border-right: 1px solid #ccc;
+                    margin-right: 0;
+                    li {
+                        float: left;
+                        width: 50%;
+                        height: 40px;
+                        line-height: 40px;
+                        border-bottom: 1px solid #ccc;
+                        span {
+                            display: inline-block;
+                            width: 118px;
+                            padding-left: 14px;
+                            background: #ebf3ff;
+                            border-top: 1px solid #fff;
+                        }
+                        input,
+                        select {
+                            display: inline-block;
+                            border: none;
+                            outline: none;
+                            width: 70%;
+                        }
+                    }
+                    .t_arbitrament {
+                        width: 100%;
+                    }
+                }
+            } //添加仲裁申请
+            .add_apply {
+                margin-top: 10px;
+                text-align: center;
+                border: 1px solid #4d8cf4;
+                width: 97%;
+                line-height: 38px;
+                height: 38px;
+                margin-bottom: 27px;
             }
         }
+    }
 }
