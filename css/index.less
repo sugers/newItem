@@ -1,5 +1,10 @@
 @baseColor:#4c8bf4;
 @shadow:0 0 6px rgba(0, 0, 0, .13);
+.textHidden {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
 .widthMargin {
     width: 1200px; margin: 0 auto;
 }
@@ -189,6 +194,7 @@ body {
 .container {
     .widthMargin;
     .nav {
+        overflow: hidden;
         li {
             float: left;
             font-size: 16px;
@@ -196,14 +202,14 @@ body {
             width: 600px;
             text-align: center;
             line-height: 48px;
-            color: #333;
-            background: #cccccc;
+            color: #fff;
+            background: #353f4b;
             cursor: pointer;
         }
         li.active {
             background: @baseColor;
             color: #fff;
-            font-weight: bold;
+            // font-weight: bold;
         }
     }
     .content {
@@ -215,8 +221,9 @@ body {
             position: absolute;
             bottom: 0;
             top: 0;
-            width: 160px;
+            width: 200px;
             background: #353f4b;
+            border-top: 1px solid #576171;
             
             li {
                 height: 62px;
@@ -228,7 +235,7 @@ body {
                 a {
                     color: #fff;
                     display: block;
-                    border-bottom: 1px solid #fff;
+                    border-bottom: 1px solid #1e2228;
                     margin: 0 25px;
                 }
             }
@@ -236,38 +243,57 @@ body {
                 background: #576171;
             }
             .historyLeft {
+                width: 200px;
                 .Hyear {
+                    display: block;
                     text-align: center;
                     padding-left: 15px;
-                    height: 62px;
+                    height: 61px;
                     background: @baseColor;
                     color: #fff;
                     line-height: 62px;
+                    border-top: 1px solid @baseColor;
                     i {
                         float: right;
                         height: 62px;
                         line-height: 62px;
                         margin-right: 10px;
                     }
+                    .setYear {
+                        background: #353f4b;
+                        position: absolute;
+                        left: 0;
+                        top: 62px;
+                        width: 200px;
+                        z-index: 10;
+                    }
+                }
+                .getMonth {
+                    width: 217px;
+                    // padding-right: 20px;
+                    position: absolute;
+                    top: 62px;
+                    bottom: 0;
+                    overflow: auto;
                 }
             }
         }
         .rightSide {
             float: left;
-            width: 1040px;
+            width: 1000px;
             overflow: hidden;
             position: absolute;
             bottom: 0;
             top: 0;
-            left: 160px;
+            left: 200px;
             .dateList{
                 position: absolute;
                 bottom: 0;
                 top: 0px;
                 overflow-y: scroll;
-                width: 1060px;
+                width: 1020px;
                 .dateItem {
-                    padding-left: 40px;
+                    padding-left: 20px;
                     padding-bottom: 10px;
                     background: #fff;
                     margin-bottom: 10px;
@@ -291,7 +317,7 @@ body {
                     height: 176px;
                     background: #fff;
                     font-size: 14px;
-                    margin: 3px;
+                    margin: 1px;
 
                     a {
                         display: block;
@@ -320,7 +346,7 @@ body {
                 color: #333;
                 background: #fff;
                 overflow: hidden;
-                padding:0 28px 0 40px;
+                padding:0 28px 0 30px;
                 box-shadow: @shadow;
 
                 .THeader {
@@ -332,13 +358,13 @@ body {
                     position: absolute;
                     bottom: 0;
                     top: 0;
-                    width: 970px;
+                    width: 940px;
                     .TBody {
                         position: absolute;
                         bottom: 0;
                         top: 50px;
                         overflow-y: scroll;
-                        width: 990px;
+                        width: 960px;
     
                         li {
                             height: 60px;
@@ -354,26 +380,40 @@ body {
                 
                 .caseNumber {
                     float: left;
-                    width: 240px;
+                    width: 256px;
+                    padding-right: 20px;
+                    box-sizing: border-box;
+                    .textHidden;
                     img {
                         vertical-align: middle;
                     }
                 }
                 .applicant {
                     float: left;
-                    width: 146px;
+                    width: 166px;
+                    padding-right: 20px;
+                    box-sizing: border-box;
+                    .textHidden;
                 }
                 .respondent {
                     float: left;
-                    width: 200px;
+                    width: 166px;
+                    padding-right: 20px;
+                    box-sizing: border-box;
+                    .textHidden;
                 }
                 .thirdPerson {
                     float: left;
-                    width: 160px;
+                    width: 166px;
+                    padding-right: 20px;
+                    box-sizing: border-box;
+                    .textHidden;
                 }
                 .startTime {
                     float: left;
-                    width: 146px;
+                    width: 108px;
+                    padding-right: 20px;
+                    box-sizing: border-box;
                 }
                 .dealTime {
                     float: left;

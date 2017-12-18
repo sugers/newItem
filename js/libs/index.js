@@ -3,23 +3,35 @@ $(function() {
     $.ajax({
         url: 'http://192.168.2.186:8000/docs/',
         data: { 'q': 'history' },
-        success(data) {
-            console.log(data.result);
-            var date = new Date(),
-                day = date.getDate(),
-                month = date.getMonth() + 1,
-                leftDayStr = '',
-                fileNum = 0;
-            for (var i = 0; i < 7; i++) {
-                leftDayStr += "<li class=\"" + (i ? '': 'active')  + "\"><a href=\"#D" + (day - i) + "\">" + month + "\u6708" + (day - i) + "\u65E5(" + fileNum + ")</a></li>";;
-                $('.recent').html(leftDayStr);
-
+        success: function(data) {
+            var leftDayStr = '',
+                fileStr = '',
+                fileNum = [];
+                var item, Syear, Smonth, Sday;
+            for (var x = 0; x < data.result.dates.length; x++) {
+                Syear = data.result.dates[x].split('-')[0];
+                Smonth = data.result.dates[x].split('-')[1];
+                Sday = data.result.dates[x].split('-')[2];
+                fileNum = data.result[data.result.dates[x]].length;
+                // 最近处理文件左边日期
+                leftDayStr += "<li class=\"" + (x ? '' : 'active') + "\"><a href=\"#D" + Sday + "\">" + Smonth + "\u6708" + Sday + "\u65E5(" + fileNum + ")</a></li>";
+                // 最近处理文件右边文件数据
+                fileStr += "<li class=\"dateItem\">\n<p class=\"time\" id=\"D" + Sday + "\" >" + Syear + "\u5E74" + Smonth + "\u6708" + Sday + "\u53F7</p>\n<ul class=\"fileList\">";
+                for (var n = 0; n < data.result[data.result.dates[x]].length; n++) {
+                    fileStr += "<li class=\"fileItem\">\n  <a href=\"\">\n  <img src=\"../img/file.png\" alt=\"\">\n  <div class=\"fileMsg\">\n    <p class=\"fileName\">" + data.result[data.result.dates[x]][n].doc_type + "</p>\n    <p class=\"fileNum\">" + data.result[data.result.dates[x]][n].accept_id + "</p>\n  </div>\n</a>\n</li>";
+                }
+                fileStr += "</ul></li>";
             }
+            $('.recent').html(leftDayStr);
+            $('.dateList ').html(fileStr);
         },
-        error(e) {
+        error: function(e) {
             console.log(e);
         }
     });
+    $('.rightSide').scroll(function() {
+        alert(1)
+    })
     $('body').click(function() {
         $('.searchRes').slideUp(200);
     });
@@ -73,7 +85,7 @@ $(function() {
         $.ajax({
             url: 'http://192.168.2.186:8000/cases/',
             type: 'get',
-            data: { 'q': 'cases', 'year': searchYear, 'status': status, 'name': searchTxt},
+            data: { 'q': 'case', 'year': searchYear, 'status': status, 'name': searchTxt},
             success: function (data) {
                 console.log(data);
                 var str = '';
@@ -95,24 +107,53 @@ $(function() {
     });
 
     $('.Hyear').click(function() {
-        // $(this).next().slideToggle();
+        $(this).find('.setYear').fadeToggle()
+        $(this).next().fadeToggle();
     });
     $('.leftSide').on('click', 'li', function() {
         $(this).addClass('active').siblings().removeClass('active');
     })
 
     $('.nav').find('li').click(function() {
+        /**
+         * 点击 '历史处理案件' 拿到时间和案件，并渲染 年 和 最近年的月份 和 该月份的数据
+         * 点击 '年' 的时候，发送 年 月份 拿到时间和案件， 并渲染 该年的月份 和 该月份的数据
+         * 点击 '月份' 的时候，发送 年 月份 拿到时间和案件，并渲染 该月份的数据
+         * 
+         * */
         $(this).addClass('active').siblings('li').removeClass('active');
         if ($(this).index() == 1) {
+            // var date = new Date();
+            // var Lmonth = date.getMonth() + 1;
+            // var Lyear = date.getFullYear();
+            var data = {};
+            data.q = 'history';
+            data.year = $('.getYear').text();
+            data.month = parseInt($('.historyLeft li.active').text()); // 这个东西，考虑一下
+            console.log(data)
             //历史处理案件
+            console.log(1)
             $.ajax({
                 url: 'http://192.168.2.186:8000/cases/',
-                data: { 'q': 'cases' },
+                data: data,
                 success(data) {
-                    var date = new Date();
-                    var day = date.getDate();
-                    var Month = date.getMonth() + 1;
-                    // console.log(data);
+                    console.log(data);
+                    var HmonthStr = '';
+                    // for (var i = Lmonth; i > 0; i--) {
+                    //     HmonthStr += "<li><a href=\"javascript:void(0);\">" + i + "\u6708</a></li>";
+                    // }
+                    for (var i = 0; i < data.dates.length; i++){
+                        console.log(data.dates[i][0])
+                        for (var x = 0; x < data.dates[i][1].length; x++) {
+                            console.log(data.dates[i][1][x])
+                            HmonthStr += "<li><a href=\"javascript:void(0);\">" + data.dates[i][1][x] + "\u6708</a></li>";
+                        }
+                    }
+                    $('.getMonth').html(HmonthStr);
+                    // var date = new Date();
+                    // var day = date.getDate();
+                    // var Month = date.getMonth() + 1;
+                    
                 },
                 error(e) {
                     console.log(e);
@@ -128,16 +169,23 @@ $(function() {
                 url: 'http://192.168.2.186:8000/docs/',
                 data: {'q': 'history'},
                 success(data) {
-                    console.log(data)
-                    var date = new Date();
-                    var day = date.getDate();
-                    var month = date.getMonth() + 1;
-                    var leftDayStr = '';
-                    var fileNum = 5;
-                    for (var i = 0; i < 7; i++) {
-                        leftDayStr += "<li class=\"" + (i ? '' : 'active') + "\"><a href=\"#D" + (day - i) + "\">" + month + "\u6708" + (day - i) + "\u65E5(" + fileNum + ")</a></li>";; 
-                        $('.recent').html(leftDayStr)
+                    var leftDayStr = '',
+                        fileStr = '',
+                        fileNum = [];
+                    var item, Syear, Smonth, Sday;
+                    for (var x = 0; x < data.result.dates.length; x++) {
+                        Syear = data.result.dates[x].split('-')[0];
+                        Smonth = data.result.dates[x].split('-')[1];
+                        Sday = data.result.dates[x].split('-')[2];
+                        fileNum = data.result[data.result.dates[x]].length;
+                        // 最近处理文件右边文件数据
+                        fileStr += "<li class=\"dateItem\">\n<p class=\"time\" id=\"D" + Sday + "\" >" + Syear + "\u5E74" + Smonth + "\u6708" + Sday + "\u53F7</p>\n<ul class=\"fileList\">";
+                        for (var n = 0; n < data.result[data.result.dates[x]].length; n++) {
+                            fileStr += "<li class=\"fileItem\">\n  <a href=\"\">\n  <img src=\"../img/file.png\" alt=\"\">\n  <div class=\"fileMsg\">\n    <p class=\"fileName\">" + data.result[data.result.dates[x]][n].doc_type + "</p>\n    <p class=\"fileNum\">" + data.result[data.result.dates[x]][n].accept_id + "</p>\n  </div>\n</a>\n</li>";
+                        }
+                        fileStr += "</ul></li>";
                     }
+                    $('.dateList ').html(fileStr);
                 },
                 error(e) {
                     console.log(e);
@@ -150,3 +198,4 @@ $(function() {
         }
     });
 })
+

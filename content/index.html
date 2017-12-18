@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/index.css">
     <script src="../js/libs/jquery/jquery.min.js"></script>
-    <script src="../js/libs/artTemplate/template.js"></script>
     <script src="../js/libs/index.js"></script>
 </head>
 <body>
@@ -69,13 +68,6 @@
                             <span class="dealTime">2017-12-8</span>
                         </li>
                     </ul>
-                    <!-- <script type="text/html" id="searchRes">
-                        <ul>
-                            <%for(var i = 0; i < list.length; i++) {%>
-                                <li><%:=list[i].name%></li>
-                            <%}%>
-                        </ul>
-                    </script> -->
                 </div>
             </div>
         </div>
@@ -88,226 +80,50 @@
         <div class="content">
             <div class="leftSide">
                 <ul class="recent">
-                    <li><a href="#D14">12月7日(5)</a></li>
-                    <li><a href="#D13">12月6日(5)</a></li>
-                    <li><a href="#D14">12月5日(5)</a></li>
-                    <li><a href="#D14">12月4日(5)</a></li>
-                    <li><a href="#D14">12月3日(5)</a></li>
-                    <li><a href="#D14">12月2日(5)</a></li>
-                    <li><a href="#D8">12月1日(5)</a></li>
+                    <li><a href="#D14"></a></li>
                 </ul>
                 <div class="historyLeft dnone">
-                    <p class="Hyear">2017年<i><img src="../img/icon-dropDown-white.png" alt=""></i></p>
-                    <ul>
+                    <span class="Hyear">
+                        <span class="getYear">2017</span>年<i><img src="../img/icon-dropDown-white.png" alt=""></i>
+                        <ul class="setYear dnone">
+                            <li><a href="javascript:void(0);">2017年</a></li>
+                            <li><a href="javascript:void(0);">2016年</a></li>
+                            <li><a href="javascript:void(0);">2015年</a></li>
+                            <li><a href="javascript:void(0);">2014年</a></li>
+                            <li><a href="javascript:void(0);">2013年</a></li>
+                            <li><a href="javascript:void(0);">2012年</a></li>
+                            <li><a href="javascript:void(0);">2014年</a></li>
+                            <li><a href="javascript:void(0);">2013年</a></li>
+                            <li><a href="javascript:void(0);">2012年</a></li>
+                        </ul>
+                    </span>
+                    <ul class="getMonth">
                         <li class="active"><a href="javascript:void(0);">12月</a></li>
                         <li><a href="javascript:void(0);">11月</a></li>
-                        <li><a href="javascript:void(0);">12月</a></li>
-                        <li><a href="javascript:void(0);">12月</a></li>
-                        <li><a href="javascript:void(0);">1月</a></li>
+                        <!-- <li><a href="javascript:void(0);">10月</a></li>
+                        <li><a href="javascript:void(0);">09月</a></li>
+                        <li><a href="javascript:void(0);">08月</a></li>
+                        <li><a href="javascript:void(0);">07月</a></li>
+                        <li><a href="javascript:void(0);">06月</a></li>
+                        <li><a href="javascript:void(0);">05月</a></li>
+                        <li><a href="javascript:void(0);">04月</a></li>
+                        <li><a href="javascript:void(0);">03月</a></li>
+                        <li><a href="javascript:void(0);">02月</a></li>
+                        <li><a href="javascript:void(0);">01月</a></li> -->
                     </ul>
                 </div>
             </div>
             <div class="rightSide">
                 <ul class="dateList ">
                     <li class="dateItem">
-                        <p class="time" id="D14" >2017年12月4号</p>
+                        <p class="time" id="D14" ></p>
                         <ul class="fileList">
                             <li class="fileItem">
                                 <a href="">
                                     <img src="../img/file.png" alt="">
                                     <div class="fileMsg">
-                                        <p class="fi    leName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dateItem">
-                        <p class="time" id="D13">2017年12月13号</p>
-                        <ul class="fileList">
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dateItem">
-                        <p class="time" id="D8">2017年12月4号</p>
-                        <ul class="fileList">
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="fileItem">
-                                <a href="">
-                                    <img src="../img/file.png" alt="">
-                                    <div class="fileMsg">
-                                        <p class="fileName">送达地址确认书</p>
-                                        <p class="fileNum">筑劳人仲收字[2018]第51号</p>
+                                        <p class="fileName"></p>
+                                        <p class="fileNum"></p>
                                     </div>
                                 </a>
                             </li>

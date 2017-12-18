@@ -1,3 +1,8 @@
+.textHidden {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
 .widthMargin {
   width: 1200px;
   margin: 0 auto;
@@ -175,6 +180,9 @@ body {
   width: 1200px;
   margin: 0 auto;
 }
+.container .nav {
+  overflow: hidden;
+}
 .container .nav li {
   float: left;
   font-size: 16px;
@@ -182,14 +190,13 @@ body {
   width: 600px;
   text-align: center;
   line-height: 48px;
-  color: #333;
-  background: #cccccc;
+  color: #fff;
+  background: #353f4b;
   cursor: pointer;
 }
 .container .nav li.active {
   background: #4c8bf4;
   color: #fff;
-  font-weight: bold;
 }
 .container .content {
   position: absolute;
@@ -201,8 +208,9 @@ body {
   position: absolute;
   bottom: 0;
   top: 0;
-  width: 160px;
+  width: 200px;
   background: #353f4b;
+  border-top: 1px solid #576171;
 }
 .container .content .leftSide li {
   height: 62px;
@@ -213,19 +221,24 @@ body {
 .container .content .leftSide li a {
   color: #fff;
   display: block;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #1e2228;
   margin: 0 25px;
 }
 .container .content .leftSide li.active {
   background: #576171;
 }
+.container .content .leftSide .historyLeft {
+  width: 200px;
+}
 .container .content .leftSide .historyLeft .Hyear {
+  display: block;
   text-align: center;
   padding-left: 15px;
-  height: 62px;
+  height: 61px;
   background: #4c8bf4;
   color: #fff;
   line-height: 62px;
+  border-top: 1px solid #4c8bf4;
 }
 .container .content .leftSide .historyLeft .Hyear i {
   float: right;
@@ -233,24 +246,39 @@ body {
   line-height: 62px;
   margin-right: 10px;
 }
+.container .content .leftSide .historyLeft .Hyear .setYear {
+  background: #353f4b;
+  position: absolute;
+  left: 0;
+  top: 62px;
+  width: 200px;
+  z-index: 10;
+}
+.container .content .leftSide .historyLeft .getMonth {
+  width: 217px;
+  position: absolute;
+  top: 62px;
+  bottom: 0;
+  overflow: auto;
+}
 .container .content .rightSide {
   float: left;
-  width: 1040px;
+  width: 1000px;
   overflow: hidden;
   position: absolute;
   bottom: 0;
   top: 0;
-  left: 160px;
+  left: 200px;
 }
 .container .content .rightSide .dateList {
   position: absolute;
   bottom: 0;
   top: 0px;
   overflow-y: scroll;
-  width: 1060px;
+  width: 1020px;
 }
 .container .content .rightSide .dateList .dateItem {
-  padding-left: 40px;
+  padding-left: 20px;
   padding-bottom: 10px;
   background: #fff;
   margin-bottom: 10px;
@@ -272,7 +300,7 @@ body {
   height: 176px;
   background: #fff;
   font-size: 14px;
-  margin: 3px;
+  margin: 1px;
 }
 .container .content .rightSide .fileList .fileItem a {
   display: block;
@@ -297,7 +325,7 @@ body {
   color: #333;
   background: #fff;
   overflow: hidden;
-  padding: 0 28px 0 40px;
+  padding: 0 28px 0 30px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.13);
 }
 .container .content .rightSide .historyRight .THeader {
@@ -309,14 +337,14 @@ body {
   position: absolute;
   bottom: 0;
   top: 0;
-  width: 970px;
+  width: 940px;
 }
 .container .content .rightSide .historyRight .clearBar .TBody {
   position: absolute;
   bottom: 0;
   top: 50px;
   overflow-y: scroll;
-  width: 990px;
+  width: 960px;
 }
 .container .content .rightSide .historyRight .clearBar .TBody li {
   height: 60px;
@@ -329,26 +357,48 @@ body {
 }
 .container .content .rightSide .historyRight .caseNumber {
   float: left;
-  width: 240px;
+  width: 256px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .container .content .rightSide .historyRight .caseNumber img {
   vertical-align: middle;
 }
 .container .content .rightSide .historyRight .applicant {
   float: left;
-  width: 146px;
+  width: 166px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .container .content .rightSide .historyRight .respondent {
   float: left;
-  width: 200px;
+  width: 166px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .container .content .rightSide .historyRight .thirdPerson {
   float: left;
-  width: 160px;
+  width: 166px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .container .content .rightSide .historyRight .startTime {
   float: left;
-  width: 146px;
+  width: 108px;
+  padding-right: 20px;
+  box-sizing: border-box;
 }
 .container .content .rightSide .historyRight .dealTime {
   float: left;
