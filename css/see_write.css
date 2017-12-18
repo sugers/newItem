@@ -18,6 +18,9 @@
 .see_write .case_top li:hover {
   background: #4d8cf4;
 }
+.see_write .three_model {
+  position: relative;
+}
 .see_write .three_model ul {
   padding: 36px 39px 36px 69px;
 }
@@ -30,21 +33,20 @@
   color: #fff;
 }
 .see_write .three_model ul li span img {
-  width: 20px;
-  height: 20px;
+  margin-right: 30px;
   vertical-align: middle;
 }
 .see_write .three_model ul li + li {
   margin-left: 35px;
 }
 .see_write .three_model ul .one {
-  background: #629bf9;
+  background: #4d8cf4;
 }
 .see_write .three_model ul .two {
-  background: #f4a01d;
+  background: #e48e05;
 }
 .see_write .three_model ul .three {
-  background: #1fa95a;
+  background: #069a45;
 }
 .historical {
   position: relative;
@@ -100,7 +102,7 @@
   font-size: 14px;
 }
 .historical .bottom ul li div + div {
-  margin-left: 200px;
+  margin-left: 195px;
 }
 .historical .bottom ul li .last {
   color: #ca2f41;

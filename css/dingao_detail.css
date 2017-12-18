@@ -1,0 +1,174 @@
+.dingao_detail {
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+}
+.dingao_detail .case_top li {
+  width: 33.33%;
+  background: #343e4a;
+  float: left;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+  border-left: 1px solid #fff;
+  margin-left: -1px;
+  font-size: 16px;
+}
+.dingao_detail .case_top li:hover {
+  background: #4d8cf4;
+}
+.dingao_detail .detail_left {
+  display: inline-block;
+  position: absolute;
+  font-size: 16px;
+  top: 48px;
+  width: 240px;
+  bottom: 0;
+  background: #343e4a;
+}
+.dingao_detail .detail_left .detail_top {
+  color: #fff;
+  font-size: 14px;
+  margin-left: 20px;
+}
+.dingao_detail .detail_left .detail_top .creat_text {
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  height: 52px;
+  line-height: 64px;
+  text-align: center;
+  border-bottom: 1px solid #1b2128;
+}
+.dingao_detail .detail_left .detail_top .creat_text img {
+  position: absolute;
+  right: 0;
+  top: 25px;
+}
+.dingao_detail .detail_left .detail_top ul li {
+  width: 90%;
+  height: 52px;
+  line-height: 64px;
+  text-align: center;
+  border-bottom: 1px solid #1b2128;
+}
+.dingao_detail .detail_left .deal_text {
+  font-size: 14px;
+}
+.dingao_detail .detail_left .deal_text ul li {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 25%;
+  float: left;
+  background: #fff;
+  border-left: 1px solid #353f4b;
+  margin-left: -1px;
+}
+.dingao_detail .detail_left .deal_text ul .rubbish {
+  border-right: 1px solid #353f4b;
+  margin-right: -1px;
+}
+.dingao_detail .detail_left .deal_text .effect_content .take_effect {
+  padding-top: 20px;
+  text-align: left;
+  height: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid #1b2128;
+}
+.dingao_detail .detail_left .deal_text .effect_content .take_effect img {
+  vertical-align: middle;
+}
+.dingao_detail .detail_left .deal_text .draf_content {
+  display: none;
+}
+.dingao_detail .detail_left .deal_text .draf_content .take_effect {
+  padding-top: 20px;
+  text-align: left;
+  height: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid #1b2128;
+}
+.dingao_detail .detail_left .deal_text .draf_content .take_effect img {
+  vertical-align: middle;
+}
+.dingao_detail .detail_left .deal_text .finalize_content {
+  display: none;
+}
+.dingao_detail .detail_left .deal_text .finalize_content .take_effect {
+  padding-top: 20px;
+  text-align: left;
+  height: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid #1b2128;
+}
+.dingao_detail .detail_left .deal_text .finalize_content .take_effect img {
+  vertical-align: middle;
+}
+.dingao_detail .detail_left .deal_text .recycle_content {
+  display: none;
+}
+.dingao_detail .detail_left .deal_text .recycle_content .take_effect {
+  padding-top: 20px;
+  text-align: left;
+  height: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-bottom: 1px solid #1b2128;
+}
+.dingao_detail .detail_left .deal_text .recycle_content .take_effect img {
+  vertical-align: middle;
+}
+.dingao_detail .detail_right {
+  float: right;
+  width: 80%;
+  background: #feffff;
+}
+.dingao_detail .detail_right .right_top {
+  margin-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #4d8cf4;
+}
+.dingao_detail .detail_right .right_top .num {
+  display: inline-block;
+  padding-top: 15px;
+}
+.dingao_detail .detail_right .right_top ul {
+  float: right;
+}
+.dingao_detail .detail_right .right_top ul li {
+  float: left;
+}
+.dingao_detail .detail_right .right_top ul li img {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-left: 5px;
+}
+.dingao_detail .detail_right .right_top ul li:hover {
+  background: #fff;
+}
+.dingao_detail .detail_right .right_top ul li + li {
+  margin-left: 30px;
+}
+.dingao_detail .detail_right .right_top ul .list img {
+  margin-left: 20px;
+}
+.dingao_detail .detail_right .right_content {
+  width: 96%;
+  height: 100%;
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  border-bottom: none;
+  border-left: none;
+  resize: none;
+  outline: none;
+}
+.dingao_detail .detail_right .right_content img {
+  width: 500px;
+}
