@@ -1,0 +1,428 @@
+@baseColor:#4c8bf4;
+@shadow:0 0 6px rgba(0, 0, 0, .13);
+.textHidden {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.widthMargin {
+    width: 1200px; margin: 0 auto;
+}
+body {
+    overflow: hidden;
+}
+.header {
+    height: 50px;
+    line-height: 50px;
+    background: @baseColor;
+    color: #fff;
+    .main {
+        .widthMargin;
+        .userMsg {
+            text-align: right;
+            line-height: 20px;
+            font-size: 12px;
+            margin-top: 4px;
+
+            span {
+                padding-left: 20px;
+            }
+            span.user {
+                background: url('../img/icon-user.png') left center no-repeat;
+                margin-right: 20px;
+            }
+            span.logOut {
+                background: url('../img/icon-logOut.png') left center no-repeat;
+                margin-left: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+.search {
+    .widthMargin;
+    box-shadow: @shadow;
+    background: #fff;
+    text-align: center;
+    height: 84px;
+    line-height: 84px;
+
+    .searchM {
+            position: relative;
+            display: inline-block;
+            margin: 0 auto;
+            text-align: left;
+        .InputSelect{
+            display: inline-block;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid @baseColor;
+            width: 118px;
+            margin-right: 5px;
+            position: relative;
+            input {
+                background: url('../img/icon-dropDown.png') right center no-repeat;
+                border: none;
+                outline: none;
+                width: 100px;
+                padding:0 15px;
+                font-size: 16px;
+            }
+            #searchKind {
+                color: #666;
+            }
+            ul {
+                position: absolute;
+                top: 40px;
+                z-index: 10;
+                background: #fff;
+                border: 1px solid @baseColor;
+                width: 116px;
+                display: none;
+                li {
+                    text-align: center;
+                    list-style: none;
+                }
+                li:hover {
+                    background: @baseColor;
+                    color: #fff;
+                    cursor: pointer;
+                }
+            }
+        }    
+
+
+        form {
+            height: 39px;
+            border: 1px solid @baseColor;
+            width: 538px;
+            display: inline-block;
+            line-height: 38px;
+
+            input {
+                border: none;
+                width: 460px;
+                line-height: 14px;
+                outline: none;
+                vertical-align: middle;
+                padding-left: 20px;
+            }
+            input[type=submit] {
+                width: 20px;
+                height: 20px;
+                background: url('../img/icon-search-blue.png') no-repeat center;
+                cursor: pointer;
+            }
+        }
+
+        .searchRes {
+            display: none;
+            box-sizing: border-box;
+            width: 100%;
+            position: absolute;
+            top: 62px;
+            background: #fff;
+            box-shadow: @shadow;
+            z-index: 20;
+            line-height: 40px;
+            font-size: 14px;
+            padding-left: 10px;
+            color: #333;
+
+            .searchResHeader {
+                overflow: hidden;
+                clear: both;
+                // position: absolute;
+                height: 40px;
+                line-height: 40px;
+                background: #fff;
+                margin-bottom: -1px;
+                border-bottom: 1px solid #e6e6e6;
+            }
+
+            .caseNumber {
+                float: left;
+                width: 210px;
+                padding-right: 15px;
+            }
+            .applicant {
+                float: left;
+                width: 145px;
+                padding-right: 20px;
+            }
+            .respondent {
+                float: left;
+                width: 155px;
+                padding-right: 20px;
+            }
+            .startTime {
+                float: left;
+                width: 85px;
+                padding-right: 20px;
+            }
+            .dealTime {
+                float: left;
+                width: 85px;
+            }
+            .searchResBody {
+                // width: -webkit-calc(100%-(40px));
+                // position: absolute;
+                // background: #fff;
+                // top: 40px;
+                overflow: hidden;
+                // padding-right: 40px;
+                max-height: 246px;
+                overflow-y: auto;
+                // width: 
+                li {
+                    clear: both;
+                    border-top: 1px solid #e6e6e6;
+                    overflow: hidden;   
+                }
+                span {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+
+.container {
+    .widthMargin;
+    .nav {
+        overflow: hidden;
+        li {
+            float: left;
+            font-size: 16px;
+            height: 48px;
+            width: 600px;
+            text-align: center;
+            line-height: 48px;
+            color: #fff;
+            background: #353f4b;
+            cursor: pointer;
+        }
+        li.active {
+            background: @baseColor;
+            color: #fff;
+            // font-weight: bold;
+        }
+    }
+    .content {
+        position: absolute;
+        bottom: 0;
+        top: 182px;
+        .leftSide {
+            float: left;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            width: 200px;
+            background: #353f4b;
+            border-top: 1px solid #576171;
+            
+            li {
+                height: 62px;
+                line-height: 62px;
+                text-align: center;
+                color: #fff;
+                // border-width: 0 0 1px 0;
+                
+                a {
+                    color: #fff;
+                    display: block;
+                    border-bottom: 1px solid #1e2228;
+                    margin: 0 25px;
+                }
+            }
+            li.active {
+                background: #576171;
+            }
+            .historyLeft {
+                width: 200px;
+                .Hyear {
+                    display: block;
+                    text-align: center;
+                    padding-left: 15px;
+                    height: 61px;
+                    background: @baseColor;
+                    color: #fff;
+                    line-height: 62px;
+                    border-top: 1px solid @baseColor;
+                    i {
+                        float: right;
+                        height: 62px;
+                        line-height: 62px;
+                        margin-right: 10px;
+                    }
+                    .setYear {
+                        background: #353f4b;
+                        position: absolute;
+                        left: 0;
+                        top: 62px;
+                        width: 200px;
+                        z-index: 10;
+                    }
+                }
+                .getMonth {
+                    width: 217px;
+                    // padding-right: 20px;
+                    position: absolute;
+                    top: 62px;
+                    bottom: 0;
+                    overflow: auto;
+                }
+            }
+        }
+        .rightSide {
+            float: left;
+            width: 1000px;
+            overflow: hidden;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 200px;
+            .dateList{
+                position: absolute;
+                bottom: 0;
+                top: 0px;
+                overflow-y: scroll;
+                width: 1020px;
+                .dateItem {
+                    padding-left: 20px;
+                    padding-bottom: 10px;
+                    background: #fff;
+                    margin-bottom: 10px;
+    
+                    .time {
+                        font-size: 16px;
+                        color: @baseColor;
+                        font-weight: bold;
+                        height: 40px;
+                        line-height: 40px;
+                    }
+                }
+            }
+
+            .fileList {
+                overflow: hidden;
+                .fileItem {
+                    float: left;
+                    text-align: center;
+                    width: 160px;
+                    height: 176px;
+                    background: #fff;
+                    font-size: 14px;
+                    margin: 1px;
+
+                    a {
+                        display: block;
+                        height: 100%;
+                        width: 100%;
+                        padding: 8px 16px;
+                        box-sizing: border-box;
+
+                        img {
+                            height: 90px;
+                            width: 70px;
+                        }
+                    }
+                }
+                .fileItem:hover {
+                    box-shadow: @shadow;
+                    background: #eee;
+                }
+            }
+
+            .historyRight {
+                position: absolute;
+                bottom: 0;
+                top: 0;
+                font-size: 14px;
+                color: #333;
+                background: #fff;
+                overflow: hidden;
+                padding:0 28px 0 30px;
+                box-shadow: @shadow;
+
+                .THeader {
+                    height: 50px;
+                    line-height: 50px;
+                }
+                .clearBar {
+                    overflow: hidden;
+                    position: absolute;
+                    bottom: 0;
+                    top: 0;
+                    width: 940px;
+                    .TBody {
+                        position: absolute;
+                        bottom: 0;
+                        top: 50px;
+                        overflow-y: scroll;
+                        width: 960px;
+    
+                        li {
+                            height: 60px;
+                            line-height: 60px;
+                            border-top: 1px solid #e6e6e6;
+                            overflow: hidden;
+                        }
+                        li:hover {
+                            background: #eee;
+                        }
+                    }
+                }
+                
+                .caseNumber {
+                    float: left;
+                    width: 256px;
+                    padding-right: 20px;
+                    box-sizing: border-box;
+                    .textHidden;
+                    img {
+                        vertical-align: middle;
+                    }
+                }
+                .applicant {
+                    float: left;
+                    width: 166px;
+                    padding-right: 20px;
+                    box-sizing: border-box;
+                    .textHidden;
+                }
+                .respondent {
+                    float: left;
+                    width: 166px;
+                    padding-right: 20px;
+                    box-sizing: border-box;
+                    .textHidden;
+                }
+                .thirdPerson {
+                    float: left;
+                    width: 166px;
+                    padding-right: 20px;
+                    box-sizing: border-box;
+                    .textHidden;
+                }
+                .startTime {
+                    float: left;
+                    width: 108px;
+                    padding-right: 20px;
+                    box-sizing: border-box;
+                }
+                .dealTime {
+                    float: left;
+                    width: 80px;
+                }
+            }
+        }
+    }
+}
+.dnone {
+    display: none;
+}

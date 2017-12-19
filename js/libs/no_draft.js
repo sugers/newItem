@@ -1,12 +1,9 @@
 $(function(){
-    var b_height=$('.left_content').height()
-    $('.right_content').height(b_height)
-
      var tipBool = false;
     // 案件块的显示与隐藏
     $('#tip').click(function () {
         if (tipBool) {
-            $(this).css('left', '0');
+            $(this).css('left', 0);
             console.log($(this).find('img').attr('src', '../img/icon-rightArrow.png'))
             $('.fixedBox').width(0).find('.cases').css({ 'display': 'none' });
         } else {

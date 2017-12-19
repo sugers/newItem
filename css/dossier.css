@@ -1,0 +1,349 @@
+.textHidden {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.widthMargin {
+  width: 1200px;
+  margin: 0 auto;
+}
+body {
+  overflow: hidden;
+}
+.header {
+  height: 50px;
+  line-height: 50px;
+  background: #4c8bf4;
+  color: #fff;
+}
+.header .main {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header .main .userMsg {
+  text-align: right;
+  line-height: 20px;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.header .main .userMsg span {
+  padding-left: 20px;
+}
+.header .main .userMsg span.user {
+  background: url('../img/icon-user.png') left center no-repeat;
+  margin-right: 20px;
+}
+.header .main .userMsg span.logOut {
+  background: url('../img/icon-logOut.png') left center no-repeat;
+  margin-left: 20px;
+}
+.header .main .userMsg p {
+  font-size: 14px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  margin-top: 10px;
+}
+.container .fixedBox {
+  position: absolute;
+  top: 108px;
+  bottom: 0;
+  border-top: 1px solid #576171;
+  width: 0;
+  font-size: 14px;
+  line-height: 1.2em;
+  z-index: 10000;
+  box-sizing: border-box;
+  background: #333;
+  color: #fff;
+}
+.container .fixedBox .cases {
+  display: none;
+  overflow: hidden;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.container .fixedBox .cases > ul {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 317px;
+  background: #353f4b;
+  display: block;
+  overflow-y: scroll;
+}
+.container .fixedBox .cases > ul > li span {
+  height: 48px;
+  line-height: 48px;
+  background: #576171;
+  display: block;
+  text-align: center;
+}
+.container .fixedBox .cases > ul > li ul li {
+  width: 300px;
+  text-align: center;
+}
+.container .fixedBox .cases > ul > li ul li a {
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  color: #fff;
+  width: 240px;
+  margin: auto;
+  text-align: center;
+  border-bottom: 1px solid #0f0e14;
+}
+.container .fixedBox .cases > ul > li ul .active a {
+  color: #4c8bf4;
+}
+.container .fixedBox #tip {
+  position: absolute;
+  left: 0;
+  top: 100px;
+  font-size: 14px;
+  line-height: 1.2em;
+  width: 36px;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 100px;
+  background: #4c8bf4;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+.container .nav {
+  overflow: hidden;
+}
+.container .nav li {
+  float: left;
+  font-size: 16px;
+  height: 48px;
+  width: 33.3%;
+  box-sizing: border-box;
+  border-right: 1px solid #576171;
+  text-align: center;
+  line-height: 48px;
+  color: #fff;
+  background: #353f4b;
+  cursor: pointer;
+}
+.container .nav li.active {
+  background: #4c8bf4;
+  color: #fff;
+}
+.container .conHeader {
+  width: 1128px;
+  margin: 0 auto;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 2px solid #4c8bf4;
+}
+.container .conHeader h2 {
+  font-weight: normal;
+  font-size: 16px;
+  float: left;
+}
+.container .conHeader p {
+  float: right;
+  line-height: 70px;
+}
+.container .conHeader p input {
+  font-size: 16px;
+  border: none;
+  padding-top: 25px;
+  margin-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  outline: none;
+}
+.container .conHeader p #catalog {
+  background: url('../img/icon-catalog-gray.png') top center no-repeat;
+}
+.container .conHeader p #catalog:hover {
+  color: #4c8bf4;
+  background: url('../img/icon-catalog-blue.png') top center no-repeat;
+}
+.container .conHeader p #refresh {
+  background: url('../img/icon-refresh.png') top center no-repeat;
+}
+.container .conHeader p #refresh:hover {
+  color: #4c8bf4;
+  background: url('../img/icon-refresh-blue.png') top center no-repeat;
+}
+.container .conHeader p #upload {
+  background: url('../img/icon-upload.png') top center no-repeat;
+}
+.container .conHeader p #upload:hover {
+  color: #4c8bf4;
+  background: url('../img/icon-upload-blue.png') top center no-repeat;
+}
+.container .conHeader p #toList {
+  background: url('../img/icon-list-gray.png') top center no-repeat;
+}
+.container .conHeader p #toList:hover {
+  color: #4c8bf4;
+  background: url('../img/icon-list-blue.png') top center no-repeat;
+}
+.container .conHeader p #returnDossier {
+  background: url('../img/icon-return-2-gray.png') top center no-repeat;
+}
+.container .conHeader p #returnDossier:hover {
+  color: #4c8bf4;
+  background: url('../img/icon-return-2-blue.png') top center no-repeat;
+}
+.container .conHeader p #lookWrite {
+  background: url('../img/icon-write-gray.png') top center no-repeat;
+}
+.container .conHeader p #lookWrite:hover {
+  color: #4c8bf4;
+  background: url('../img/icon-write-blue.png') top center no-repeat;
+}
+.container .conHeader p #scanResult {
+  background: url('../img/icon-scan-gray.png') top center no-repeat;
+}
+.container .conHeader p #scanResult:hover {
+  color: #4c8bf4;
+  background: url('../img/icon-scan-blue.png') top center no-repeat;
+}
+.container .content {
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  width: 1200px;
+  top: 170px;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.container .content .rightSide {
+  width: 1200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+  left: 36px;
+  bottom: 0;
+}
+.container .content .rightSide ul {
+  margin-right: -47px;
+  padding-top: 30px;
+}
+.container .content .rightSide ul li {
+  float: left;
+  box-sizing: border-box;
+  margin-right: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.container .content .rightSide ul li a {
+  height: 240px;
+  width: 356px;
+  box-sizing: border-box;
+  display: block;
+  border: 1px solid red;
+}
+.container .content .rightSide ul li a img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.container .content .picDetail {
+  margin-top: 20px;
+  height: 100%;
+  width: 1126px;
+  border: 1px solid #d9d9d9;
+  margin: auto;
+  overflow: auto;
+}
+.container .content .picDetail img {
+  max-width: 100%;
+}
+.container .content .ocrResult {
+  width: 1126px;
+  height: 100%;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #d9d9d9;
+  overflow: auto;
+  box-sizing: border-box;
+  text-align: left;
+}
+.container .leftSide {
+  position: absolute;
+  bottom: 0;
+  top: 108px;
+  border-top: 1px solid #576171;
+  width: 300px;
+  background: #353f4b;
+  text-align: center;
+  overflow: hidden;
+}
+.container .leftSide form {
+  width: 220px;
+  height: 30px;
+  background: #fff;
+  margin: 10px auto;
+  line-height: 30px;
+}
+.container .leftSide form input {
+  border: none;
+  width: 180px;
+  outline: none;
+}
+.container .leftSide form input[type=submit] {
+  background: url('../img/icon-search-gray.png') no-repeat center;
+  height: 20px;
+  width: 20px;
+  line-height: 16px;
+  margin-right: 10px;
+  vertical-align: text-bottom;
+}
+.container .leftSide .juanList .juanItem .muluName {
+  position: relative;
+  background: #576171;
+  display: block;
+  margin-bottom: 1px;
+  height: 40px;
+  box-sizing: content-box;
+}
+.container .leftSide .juanList .juanItem .muluName span {
+  font-size: 14px;
+  width: 220px;
+  line-height: 40px;
+  margin: auto;
+  display: block;
+  border-bottom: 1px solid #1e2228;
+  color: #fff;
+}
+.container .leftSide .juanList .juanItem .muluName i {
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+.container .leftSide .juanList .juanItem .muluList {
+  display: none;
+  width: 317px;
+  overflow-y: scroll;
+  position: absolute;
+  left: 0;
+  top: 90px;
+  bottom: 0;
+}
+.container .leftSide .juanList .juanItem .muluList li a {
+  font-size: 14px;
+  box-sizing: border-box;
+  text-align: left;
+  display: block;
+  width: 220px;
+  height: 40px;
+  line-height: 40px;
+  margin: auto;
+  border-bottom: 1px solid #1e2228;
+  color: #fff;
+}
+.container .leftSide .juanList .juanItem .muluList li.active a {
+  color: #4c8bf4;
+}

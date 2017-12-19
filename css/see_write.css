@@ -32,12 +32,17 @@
 .header .main .userMsg p {
   font-size: 14px;
 }
-.see_write {
+.box_all {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+.box_all .see_write {
   padding-top: 20px;
   width: 1200px;
   margin: 0 auto;
 }
-.see_write .case_top li {
+.box_all .see_write .case_top li {
   width: 33.33%;
   background: #343e4a;
   float: left;
@@ -49,17 +54,17 @@
   margin-left: -1px;
   font-size: 16px;
 }
-.see_write .case_top li:hover {
+.box_all .see_write .case_top li:hover {
   background: #4d8cf4;
 }
-.see_write .three_model {
+.box_all .see_write .three_model {
   background: #fff;
   position: relative;
 }
-.see_write .three_model ul {
+.box_all .see_write .three_model ul {
   padding: 36px 39px 36px 69px;
 }
-.see_write .three_model ul li {
+.box_all .see_write .three_model ul li {
   float: left;
   width: 338px;
   height: 118px;
@@ -67,23 +72,23 @@
   line-height: 118px;
   color: #fff;
 }
-.see_write .three_model ul li span img {
+.box_all .see_write .three_model ul li span img {
   margin-right: 30px;
   vertical-align: middle;
 }
-.see_write .three_model ul li + li {
+.box_all .see_write .three_model ul li + li {
   margin-left: 35px;
 }
-.see_write .three_model ul .one {
+.box_all .see_write .three_model ul .one {
   background: #4d8cf4;
 }
-.see_write .three_model ul .two {
+.box_all .see_write .three_model ul .two {
   background: #e48e05;
 }
-.see_write .three_model ul .three {
+.box_all .see_write .three_model ul .three {
   background: #069a45;
 }
-.historical {
+.box_all .historical {
   position: relative;
   width: 1090px;
   margin: 0 auto;
@@ -91,7 +96,7 @@
   padding: 65px 40px 30px 70px;
   height: 820px;
 }
-.historical .top ul li {
+.box_all .historical .top ul li {
   float: left;
   width: 81px;
   height: 32px;
@@ -101,11 +106,11 @@
   text-align: center;
   color: #4d8cf4;
 }
-.historical .top ul li:hover {
+.box_all .historical .top ul li:hover {
   background: #4d8cf4;
   color: #fff;
 }
-.historical .top ul .last {
+.box_all .historical .top ul .last {
   position: relative;
   width: auto;
   height: 32px;
@@ -116,71 +121,139 @@
   margin-left: 20px;
   color: #4d8cf4;
 }
-.historical .top ul .last input {
+.box_all .historical .top ul .last input {
   outline: none;
   font-size: 12px;
   width: 400px;
   height: 100%;
 }
-.historical .top ul .last img {
+.box_all .historical .top ul .last img {
   position: absolute;
   right: 25px;
   top: 10px;
 }
-.historical .bottom ul li {
+.box_all .historical .bottom ul li {
   width: 100%;
   height: 65px;
   line-height: 65px;
   border-bottom: 1px solid #ccc;
 }
-.historical .bottom ul li div {
+.box_all .historical .bottom ul li div {
   display: inline-block;
   font-size: 14px;
 }
-.historical .bottom ul li div + div {
+.box_all .historical .bottom ul li div + div {
   margin-left: 195px;
 }
-.historical .bottom ul li .last {
+.box_all .historical .bottom ul li .last {
   color: #ca2f41;
 }
-.historical .bottom ul li .last img {
+.box_all .historical .bottom ul li .last img {
   width: 20px;
   height: 20px;
   vertical-align: middle;
 }
-.historical .bottom ul li .last .dowload {
+.box_all .historical .bottom ul li .last .dowload {
   color: #4d8cf4;
 }
-.historical .fenye {
+.box_all .historical .fenye {
   position: absolute;
   top: 825px;
 }
-.historical .fenye .page {
+.box_all .historical .fenye .page {
   padding: 30px 0;
   margin-left: 300px;
 }
-.historical .fenye .page li {
+.box_all .historical .fenye .page li {
   float: left;
   padding: 5px 10px;
   cursor: pointer;
 }
-.historical .fenye .page .pageItem {
+.box_all .historical .fenye .page .pageItem {
   border: solid thin #DDDDDD;
   margin: 5px;
 }
-.historical .fenye .page .pageItem:hover {
+.box_all .historical .fenye .page .pageItem:hover {
   border: solid thin #0099FF;
   background-color: #0099FF;
   color: white;
 }
-.historical .fenye .page .pageItemActive {
+.box_all .historical .fenye .page .pageItemActive {
   border: solid thin #0099FF;
   margin: 5px;
   background-color: #0099FF;
   color: white;
 }
-.historical .fenye .page .pageItemDisable {
+.box_all .historical .fenye .page .pageItemDisable {
   border: solid thin #DDDDDD;
   margin: 5px;
   background-color: #DDDDDD;
+}
+.box_all .fixedBox {
+  position: absolute;
+  top: 68px;
+  bottom: 0;
+  border-top: 1px solid #576171;
+  width: 0;
+  font-size: 14px;
+  line-height: 1.2em;
+  z-index: 10000;
+  box-sizing: border-box;
+  background: #333;
+  color: #fff;
+}
+.box_all .fixedBox .cases {
+  display: none;
+  overflow: hidden;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.box_all .fixedBox .cases > ul {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 317px;
+  background: #353f4b;
+  display: block;
+  overflow-y: scroll;
+}
+.box_all .fixedBox .cases > ul > li span {
+  height: 48px;
+  line-height: 48px;
+  background: #576171;
+  display: block;
+  text-align: center;
+}
+.box_all .fixedBox .cases > ul > li ul li {
+  width: 300px;
+  text-align: center;
+}
+.box_all .fixedBox .cases > ul > li ul li a {
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  color: #fff;
+  width: 240px;
+  margin: auto;
+  text-align: center;
+  border-bottom: 1px solid #0f0e14;
+}
+.box_all .fixedBox .cases > ul > li ul .active a {
+  color: #4c8bf4;
+}
+.box_all .fixedBox #tip {
+  position: absolute;
+  top: 100px;
+  font-size: 14px;
+  line-height: 1.2em;
+  width: 36px;
+  padding: 10px;
+  box-sizing: border-box;
+  height: 100px;
+  background: #4c8bf4;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
 }

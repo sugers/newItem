@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>智审系统</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/libs/jquery/jquery.min.js"></script>
+    <script src="../js/libs/index.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="main">
+            <span class="fl logo">
+                <img src="" alt="LOGO">
+            </span>
+            <div class="fr userMsg">
+                <p>
+                    <span class="user">张三</span>
+                    |
+                    <span class="logOut">退出</span>
+                </p>
+                <p class="arbitrate">广州市白云区劳动人事争议调解仲裁院</p>
+            </div>
+        </div>
+    </div>
+    <div class="search">
+        <div class="searchM">
+            <label for="searchYear" class="InputSelect">
+                <input type="button" id="searchYear" value="2017" readonly>
+                <ul>
+                    <li>2017</li>
+                    <li>2016</li>
+                    <li>2015</li>
+                    <li>2014</li>
+                    <li>2013</li>
+                </ul>
+            </label>
+            <label for="searchKind" class="InputSelect">
+                <input type="button" id="searchKind" value="案件性质" readonly>
+                <ul>
+                    <li>收案</li>
+                    <li>立案</li>
+                    <li>不予受理</li>
+                </ul>
+            </label>
+            <form>
+                <input type="text" id="searchTxt" placeholder="请输入当事人名称或案件流水号进行搜索">
+                <input type="submit" value="" id="searchBtn">
+            </form>
+            <div class="searchRes">
+                <div class="searchResHeader">
+                    <span class="caseNumber">案号</span>
+                    <span class="applicant">申请人</span>
+                    <span class="respondent">被申请人</span>
+                    <span class="startTime">立案日期</span>
+                    <span class="dealTime">处理日期</span>
+                </div>
+                <div class="searchResBody">
+                    <ul>
+                        <li>
+                            <span class="caseNumber">筑劳人仲收字[2018]第51号</span>
+                            <span class="applicant">广州润普网络科技有限公司</span>
+                            <span class="respondent">广州润普网络科技有限公司</span>
+                            <span class="startTime">2017-11-11</span>
+                            <span class="dealTime">2017-12-8</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <ul class="nav">
+            <li class="active">最近处理文书</li>
+            <li>历史处理案件</li>
+        </ul>
+        <div class="content">
+            <div class="leftSide">
+                <ul class="recent">
+                    <li><a href="#D14"></a></li>
+                </ul>
+                <div class="historyLeft dnone">
+                    <span class="Hyear">
+                        <span class="getYear">2017</span>年<i><img src="../img/icon-dropDown-white.png" alt=""></i>
+                        <ul class="setYear dnone">
+                            <li><a href="javascript:void(0);">2017年</a></li>
+                            <li><a href="javascript:void(0);">2016年</a></li>
+                            <li><a href="javascript:void(0);">2015年</a></li>
+                            <li><a href="javascript:void(0);">2014年</a></li>
+                            <li><a href="javascript:void(0);">2013年</a></li>
+                            <li><a href="javascript:void(0);">2012年</a></li>
+                            <li><a href="javascript:void(0);">2014年</a></li>
+                            <li><a href="javascript:void(0);">2013年</a></li>
+                            <li><a href="javascript:void(0);">2012年</a></li>
+                        </ul>
+                    </span>
+                    <ul class="getMonth">
+                        <li class="active"><a href="javascript:void(0);">12月</a></li>
+                        <li><a href="javascript:void(0);">11月</a></li>
+                        <!-- <li><a href="javascript:void(0);">10月</a></li>
+                        <li><a href="javascript:void(0);">09月</a></li>
+                        <li><a href="javascript:void(0);">08月</a></li>
+                        <li><a href="javascript:void(0);">07月</a></li>
+                        <li><a href="javascript:void(0);">06月</a></li>
+                        <li><a href="javascript:void(0);">05月</a></li>
+                        <li><a href="javascript:void(0);">04月</a></li>
+                        <li><a href="javascript:void(0);">03月</a></li>
+                        <li><a href="javascript:void(0);">02月</a></li>
+                        <li><a href="javascript:void(0);">01月</a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="rightSide">
+                <ul class="dateList ">
+                    <li class="dateItem">
+                        <p class="time" id="D14" ></p>
+                        <ul class="fileList">
+                            <li class="fileItem">
+                                <a href="">
+                                    <img src="../img/file.png" alt="">
+                                    <div class="fileMsg">
+                                        <p class="fileName"></p>
+                                        <p class="fileNum"></p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="historyRight dnone">
+                    <ul class="THeader">
+                        <li class="caseNumber">案号</li>
+                        <li class="applicant">申请人</li>
+                        <li class="respondent">被申请人</li>
+                        <li class="thirdPerson">第三人</li>
+                        <li class="startTime">立案日期</li>
+                        <li class="dealTime">处理日期</li>
+                    </ul>
+                    <div class="clearBar">
+                        <ul class="TBody">
+                            <li>
+                                <span class="caseNumber">
+                                    <i><img src="../img/icon-file.png" alt=""></i>
+                                    筑劳人仲收字[2018]第51号
+                                </span>
+                                <span class="applicant">张三</span>
+                                <span class="respondent">广州网络科技公司</span>
+                                <span class="thirdPerson">李四</span>
+                                <span class="startTime">2017-11-11</span>
+                                <span class="dealTime">2017-12-8</span>
+                            </li>
+                            <li>
+                                <span class="caseNumber">
+                                    <i><img src="../img/icon-file.png" alt=""></i>
+                                    筑劳人仲收字[2018]第51号
+                                </span>
+                                <span class="applicant">张三</span>
+                                <span class="respondent">广州网络科技公司</span>
+                                <span class="thirdPerson">李四</span>
+                                <span class="startTime">2017-11-11</span>
+                                <span class="dealTime">2017-12-8</span>
+                            </li>
+                            <li>
+                                <span class="caseNumber">
+                                    <i><img src="../img/icon-file.png" alt=""></i>
+                                    筑劳人仲收字[2018]第51号
+                                </span>
+                                <span class="applicant">张三</span>
+                                <span class="respondent">广州网络科技公司</span>
+                                <span class="thirdPerson">李四</span>
+                                <span class="startTime">2017-11-11</span>
+                                <span class="dealTime">2017-12-8</span>
+                            </li>
+                            <li>
+                                <span class="caseNumber">
+                                    <i><img src="../img/icon-file.png" alt=""></i>
+                                    筑劳人仲收字[2018]第51号
+                                </span>
+                                <span class="applicant">张三</span>
+                                <span class="respondent">广州网络科技公司</span>
+                                <span class="thirdPerson">李四</span>
+                                <span class="startTime">2017-11-11</span>
+                                <span class="dealTime">2017-12-8</span>
+                            </li>
+                            <li>
+                                <span class="caseNumber">
+                                    <i><img src="../img/icon-file.png" alt=""></i>
+                                    筑劳人仲收字[2018]第51号
+                                </span>
+                                <span class="applicant">张三</span>
+                                <span class="respondent">广州网络科技公司</span>
+                                <span class="thirdPerson">李四</span>
+                                <span class="startTime">2017-11-11</span>
+                                <span class="dealTime">2017-12-8</span>
+                            </li>
+                            <li>
+                                <span class="caseNumber">
+                                    <i><img src="../img/icon-file.png" alt=""></i>
+                                    筑劳人仲收字[2018]第51号
+                                </span>
+                                <span class="applicant">张三</span>
+                                <span class="respondent">广州网络科技公司</span>
+                                <span class="thirdPerson">李四</span>
+                                <span class="startTime">2017-11-11</span>
+                                <span class="dealTime">2017-12-8</span>
+                            </li>
+                            <li>
+                                <span class="caseNumber">
+                                    <i><img src="../img/icon-file.png" alt=""></i>
+                                    筑劳人仲收字[2018]第51号
+                                </span>
+                                <span class="applicant">张三</span>
+                                <span class="respondent">广州网络科技公司</span>
+                                <span class="thirdPerson">李四</span>
+                                <span class="startTime">2017-11-11</span>
+                                <span class="dealTime">2017-12-8</span>
+                            </li>
+                            <li>
+                                <span class="caseNumber">
+                                    <i><img src="../img/icon-file.png" alt=""></i>
+                                    筑劳人仲收字[2018]第51号
+                                </span>
+                                <span class="applicant">张三</span>
+                                <span class="respondent">广州网络科技公司</span>
+                                <span class="thirdPerson">李四</span>
+                                <span class="startTime">2017-11-11</span>
+                                <span class="dealTime">2017-12-8</span>
+                            </li>
+                            <li>
+                                <span class="caseNumber">
+                                    <i><img src="../img/icon-file.png" alt=""></i>
+                                    筑劳人仲收字[2018]第51号
+                                </span>
+                                <span class="applicant">张三</span>
+                                <span class="respondent">广州网络科技公司</span>
+                                <span class="thirdPerson">李四</span>
+                                <span class="startTime">2017-11-11</span>
+                                <span class="dealTime">2017-12-8</span>
+                            </li>
+                            <li>
+                                <span class="caseNumber">
+                                    <i><img src="../img/icon-file.png" alt=""></i>
+                                    筑劳人仲收字[2018]第51号
+                                </span>
+                                <span class="applicant">张三</span>
+                                <span class="respondent">广州网络科技公司</span>
+                                <span class="thirdPerson">李四</span>
+                                <span class="startTime">2017-11-11</span>
+                                <span class="dealTime">2017-12-8</span>
+                            </li>
+                            <li>
+                                <span class="caseNumber">
+                                    <i><img src="../img/icon-file.png" alt=""></i>
+                                    筑劳人仲收字[2018]第51号
+                                </span>
+                                <span class="applicant">张三</span>
+                                <span class="respondent">广州网络科技公司</span>
+                                <span class="thirdPerson">李四</span>
+                                <span class="startTime">2017-11-11</span>
+                                <span class="dealTime">2017-12-8</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

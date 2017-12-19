@@ -1,0 +1,409 @@
+.textHidden {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.widthMargin {
+  width: 1200px;
+  margin: 0 auto;
+}
+body {
+  overflow: hidden;
+}
+.header {
+  height: 50px;
+  line-height: 50px;
+  background: #4c8bf4;
+  color: #fff;
+}
+.header .main {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header .main .userMsg {
+  text-align: right;
+  line-height: 20px;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.header .main .userMsg span {
+  padding-left: 20px;
+}
+.header .main .userMsg span.user {
+  background: url('../img/icon-user.png') left center no-repeat;
+  margin-right: 20px;
+}
+.header .main .userMsg span.logOut {
+  background: url('../img/icon-logOut.png') left center no-repeat;
+  margin-left: 20px;
+}
+.header .main .userMsg p {
+  font-size: 14px;
+}
+.search {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.13);
+  background: #fff;
+  text-align: center;
+  height: 84px;
+  line-height: 84px;
+}
+.search .searchM {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+}
+.search .searchM .InputSelect {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid #4c8bf4;
+  width: 118px;
+  margin-right: 5px;
+  position: relative;
+}
+.search .searchM .InputSelect input {
+  background: url('../img/icon-dropDown.png') right center no-repeat;
+  border: none;
+  outline: none;
+  width: 100px;
+  padding: 0 15px;
+  font-size: 16px;
+}
+.search .searchM .InputSelect #searchKind {
+  color: #666;
+}
+.search .searchM .InputSelect ul {
+  position: absolute;
+  top: 40px;
+  z-index: 10;
+  background: #fff;
+  border: 1px solid #4c8bf4;
+  width: 116px;
+  display: none;
+}
+.search .searchM .InputSelect ul li {
+  text-align: center;
+  list-style: none;
+}
+.search .searchM .InputSelect ul li:hover {
+  background: #4c8bf4;
+  color: #fff;
+  cursor: pointer;
+}
+.search .searchM form {
+  height: 39px;
+  border: 1px solid #4c8bf4;
+  width: 538px;
+  display: inline-block;
+  line-height: 38px;
+}
+.search .searchM form input {
+  border: none;
+  width: 460px;
+  line-height: 14px;
+  outline: none;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+.search .searchM form input[type=submit] {
+  width: 20px;
+  height: 20px;
+  background: url('../img/icon-search-blue.png') no-repeat center;
+  cursor: pointer;
+}
+.search .searchM .searchRes {
+  display: none;
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  top: 62px;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.13);
+  z-index: 20;
+  line-height: 40px;
+  font-size: 14px;
+  padding-left: 10px;
+  color: #333;
+}
+.search .searchM .searchRes .searchResHeader {
+  overflow: hidden;
+  clear: both;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  margin-bottom: -1px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.search .searchM .searchRes .caseNumber {
+  float: left;
+  width: 210px;
+  padding-right: 15px;
+}
+.search .searchM .searchRes .applicant {
+  float: left;
+  width: 145px;
+  padding-right: 20px;
+}
+.search .searchM .searchRes .respondent {
+  float: left;
+  width: 155px;
+  padding-right: 20px;
+}
+.search .searchM .searchRes .startTime {
+  float: left;
+  width: 85px;
+  padding-right: 20px;
+}
+.search .searchM .searchRes .dealTime {
+  float: left;
+  width: 85px;
+}
+.search .searchM .searchRes .searchResBody {
+  overflow: hidden;
+  max-height: 246px;
+  overflow-y: auto;
+}
+.search .searchM .searchRes .searchResBody li {
+  clear: both;
+  border-top: 1px solid #e6e6e6;
+  overflow: hidden;
+}
+.search .searchM .searchRes .searchResBody span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.container .nav {
+  overflow: hidden;
+}
+.container .nav li {
+  float: left;
+  font-size: 16px;
+  height: 48px;
+  width: 600px;
+  text-align: center;
+  line-height: 48px;
+  color: #fff;
+  background: #353f4b;
+  cursor: pointer;
+}
+.container .nav li.active {
+  background: #4c8bf4;
+  color: #fff;
+}
+.container .content {
+  position: absolute;
+  bottom: 0;
+  top: 182px;
+}
+.container .content .leftSide {
+  float: left;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 200px;
+  background: #353f4b;
+  border-top: 1px solid #576171;
+}
+.container .content .leftSide li {
+  height: 62px;
+  line-height: 62px;
+  text-align: center;
+  color: #fff;
+}
+.container .content .leftSide li a {
+  color: #fff;
+  display: block;
+  border-bottom: 1px solid #1e2228;
+  margin: 0 25px;
+}
+.container .content .leftSide li.active {
+  background: #576171;
+}
+.container .content .leftSide .historyLeft {
+  width: 200px;
+}
+.container .content .leftSide .historyLeft .Hyear {
+  display: block;
+  text-align: center;
+  padding-left: 15px;
+  height: 61px;
+  background: #4c8bf4;
+  color: #fff;
+  line-height: 62px;
+  border-top: 1px solid #4c8bf4;
+}
+.container .content .leftSide .historyLeft .Hyear i {
+  float: right;
+  height: 62px;
+  line-height: 62px;
+  margin-right: 10px;
+}
+.container .content .leftSide .historyLeft .Hyear .setYear {
+  background: #353f4b;
+  position: absolute;
+  left: 0;
+  top: 62px;
+  width: 200px;
+  z-index: 10;
+}
+.container .content .leftSide .historyLeft .getMonth {
+  width: 217px;
+  position: absolute;
+  top: 62px;
+  bottom: 0;
+  overflow: auto;
+}
+.container .content .rightSide {
+  float: left;
+  width: 1000px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 200px;
+}
+.container .content .rightSide .dateList {
+  position: absolute;
+  bottom: 0;
+  top: 0px;
+  overflow-y: scroll;
+  width: 1020px;
+}
+.container .content .rightSide .dateList .dateItem {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.container .content .rightSide .dateList .dateItem .time {
+  font-size: 16px;
+  color: #4c8bf4;
+  font-weight: bold;
+  height: 40px;
+  line-height: 40px;
+}
+.container .content .rightSide .fileList {
+  overflow: hidden;
+}
+.container .content .rightSide .fileList .fileItem {
+  float: left;
+  text-align: center;
+  width: 160px;
+  height: 176px;
+  background: #fff;
+  font-size: 14px;
+  margin: 1px;
+}
+.container .content .rightSide .fileList .fileItem a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 8px 16px;
+  box-sizing: border-box;
+}
+.container .content .rightSide .fileList .fileItem a img {
+  height: 90px;
+  width: 70px;
+}
+.container .content .rightSide .fileList .fileItem:hover {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.13);
+  background: #eee;
+}
+.container .content .rightSide .historyRight {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  font-size: 14px;
+  color: #333;
+  background: #fff;
+  overflow: hidden;
+  padding: 0 28px 0 30px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.13);
+}
+.container .content .rightSide .historyRight .THeader {
+  height: 50px;
+  line-height: 50px;
+}
+.container .content .rightSide .historyRight .clearBar {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 940px;
+}
+.container .content .rightSide .historyRight .clearBar .TBody {
+  position: absolute;
+  bottom: 0;
+  top: 50px;
+  overflow-y: scroll;
+  width: 960px;
+}
+.container .content .rightSide .historyRight .clearBar .TBody li {
+  height: 60px;
+  line-height: 60px;
+  border-top: 1px solid #e6e6e6;
+  overflow: hidden;
+}
+.container .content .rightSide .historyRight .clearBar .TBody li:hover {
+  background: #eee;
+}
+.container .content .rightSide .historyRight .caseNumber {
+  float: left;
+  width: 256px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.container .content .rightSide .historyRight .caseNumber img {
+  vertical-align: middle;
+}
+.container .content .rightSide .historyRight .applicant {
+  float: left;
+  width: 166px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.container .content .rightSide .historyRight .respondent {
+  float: left;
+  width: 166px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.container .content .rightSide .historyRight .thirdPerson {
+  float: left;
+  width: 166px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.container .content .rightSide .historyRight .startTime {
+  float: left;
+  width: 108px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.container .content .rightSide .historyRight .dealTime {
+  float: left;
+  width: 80px;
+}
+.dnone {
+  display: none;
+}

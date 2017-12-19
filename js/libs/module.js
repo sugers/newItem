@@ -1,7 +1,4 @@
 $(function(){
-    var b_height=$('.left_content').height()
-    $('.right_content').height(b_height)
-
      var tipBool = false;
     // 案件块的显示与隐藏
     $('#tip').click(function () {
