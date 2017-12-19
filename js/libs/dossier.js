@@ -34,4 +34,37 @@ $(function() {
             }
         }
     });
+    btnAble();
 });
+function btnAble (){
+    // 右图片区，按钮对应功能
+    $('.rightSide').on('click', 'li', function () {
+        var imgSrc = $(this).find('img').attr('src');
+        $('.picDetail').removeClass('dnone').find('img').attr('src', imgSrc);
+        $('.rightSide').addClass('dnone');
+        $('#toList').removeClass('dnone');
+        $('#upload').addClass('dnone');
+        $('#lookWrite').removeClass('dnone');
+        $('#scanResult').removeClass('dnone');
+    });
+    $('#scanResult').click(function () {
+        $('.picDetail').addClass('dnone');
+        $('.ocrResult').removeClass('dnone');
+        $('#scanResult').addClass('dnone');
+        $('#returnDossier').removeClass('dnone');
+    });
+    $('#returnDossier').click(function () {
+        $('.picDetail').removeClass('dnone');
+        $('.ocrResult').addClass('dnone');
+        $('#scanResult').removeClass('dnone');
+        $('#returnDossier').addClass('dnone');
+    });
+    $('#toList').click(function () {
+        $('.picDetail').addClass('dnone');
+        $('.rightSide').removeClass('dnone');
+        $('#toList').addClass('dnone');
+        $('#upload').removeClass('dnone');
+        $('#lookWrite').addClass('dnone');
+        $('#scanResult').addClass('dnone');
+    });
+}
