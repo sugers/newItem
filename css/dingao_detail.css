@@ -57,7 +57,7 @@
   position: absolute;
   font-size: 16px;
   top: 118px;
-  width: 240px;
+  width: 300px;
   bottom: 0;
   background: #343e4a;
 }
@@ -114,6 +114,7 @@
 }
 .dingao_detail .detail_left .deal_text .effect_content .take_effect img {
   vertical-align: middle;
+  margin-left: 45px;
 }
 .dingao_detail .detail_left .deal_text .draf_content {
   display: none;
@@ -128,6 +129,7 @@
 }
 .dingao_detail .detail_left .deal_text .draf_content .take_effect img {
   vertical-align: middle;
+  margin-left: 45px;
 }
 .dingao_detail .detail_left .deal_text .finalize_content {
   display: none;
@@ -142,6 +144,7 @@
 }
 .dingao_detail .detail_left .deal_text .finalize_content .take_effect img {
   vertical-align: middle;
+  margin-left: 45px;
 }
 .dingao_detail .detail_left .deal_text .recycle_content {
   display: none;
@@ -156,10 +159,14 @@
 }
 .dingao_detail .detail_left .deal_text .recycle_content .take_effect img {
   vertical-align: middle;
+  margin-left: 45px;
+}
+.dingao_detail .detail_left .take_effect:hover {
+  color: #227fb6;
 }
 .dingao_detail .detail_right {
   float: right;
-  width: 80%;
+  width: 75%;
   background: #feffff;
 }
 .dingao_detail .detail_right .right_top {
@@ -176,22 +183,21 @@
   float: right;
 }
 .dingao_detail .detail_right .right_top ul li {
+  text-align: center;
+  font-size: 16px;
   float: left;
 }
-.dingao_detail .detail_right .right_top ul li img {
-  width: 20px;
-  height: 20px;
+.dingao_detail .detail_right .right_top ul li span img {
+  margin: 0 auto;
+  padding-bottom: 5px;
   display: block;
-  margin-left: 5px;
 }
 .dingao_detail .detail_right .right_top ul li:hover {
   background: #fff;
+  color: #4d8cf4;
 }
 .dingao_detail .detail_right .right_top ul li + li {
-  margin-left: 30px;
-}
-.dingao_detail .detail_right .right_top ul .list img {
-  margin-left: 20px;
+  margin-left: 15px;
 }
 .dingao_detail .detail_right .right_content {
   width: 96%;
@@ -202,7 +208,4 @@
   border-left: none;
   resize: none;
   outline: none;
-}
-.dingao_detail .detail_right .right_content img {
-  width: 500px;
 }

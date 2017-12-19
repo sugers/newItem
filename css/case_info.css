@@ -36,7 +36,6 @@
   width: 1200px;
   margin: 0 auto;
   padding-top: 20px;
-  background: #fff;
   position: relative;
 }
 .case_info .case_top li {
@@ -58,7 +57,7 @@
   display: inline-block;
   height: 2307px;
   font-size: 16px;
-  top: 48px;
+  top: 68px;
   width: 180px;
   background: #343e4a;
 }
@@ -86,7 +85,7 @@
   border: none;
   float: right;
   position: absolute;
-  top: 48px;
+  top: 68px;
   bottom: 0;
   left: 180px;
   overflow: hidden;

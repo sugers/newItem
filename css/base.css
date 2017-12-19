@@ -56,3 +56,6 @@ table
 .fr {
     float: right;
 }
+.dnone{
+    display: none;
+}

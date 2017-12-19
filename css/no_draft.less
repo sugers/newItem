@@ -1,0 +1,105 @@
+@baseColor: #4c8bf4;
+.widthMargin {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 50px;
+    line-height: 50px;
+    background: @baseColor;
+    color: #fff;
+    .main {
+        .widthMargin;
+        .userMsg {
+            text-align: right;
+            line-height: 20px;
+            font-size: 12px;
+            margin-top: 4px;
+            span {
+                padding-left: 20px;
+            }
+            span.user {
+                background: url('../img/icon-user.png') left center no-repeat;
+                margin-right: 20px;
+            }
+            span.logOut {
+                background: url('../img/icon-logOut.png') left center no-repeat;
+                margin-left: 20px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.no_draft {
+    padding-top:20px;
+    .case_top {
+        width: 1200px;
+        margin: 0 auto;
+        li {
+            width: 33.33%;
+            background: #343e4a;
+            float: left;
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            color: #fff;
+            border-left: 1px solid #fff;
+            margin-left: -1px;
+            font-size: 16px;
+        }
+        li:hover {
+            background: #4d8cf4;
+        }
+    }
+    .draft_right {
+        width: 1200px;
+        background: #feffff;
+        margin: 0 auto;
+        .right_top {
+            margin-left: 36px;
+            margin-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #4d8cf4;
+            .num {
+                display: inline-block;
+                padding-top: 15px;
+            }
+            ul {
+                float: right;
+                li {
+                    text-align: center;
+                    font-size: 16px;
+                    float: left;
+                    span {
+                        img {
+                            margin: 0 auto;
+                            padding-bottom: 5px;
+                            display: block;
+                        }
+                    }
+                }
+                li:hover {
+                    background: #fff;
+                }
+                li+li {
+                    margin-left: 15px;
+                }
+            }
+        }
+        .right_content {
+            width: 95%;
+            height: 100%;
+            margin-left: 36px;
+            margin-top: 20px;
+            border: 2px solid #ccc;
+            border-bottom: none;
+            resize: none;
+            outline: none;
+        }
+    }
+}
