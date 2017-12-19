@@ -33,9 +33,9 @@
   font-size: 14px;
 }
 .see_write {
+  padding-top: 20px;
   width: 1200px;
   margin: 0 auto;
-  background: #fff;
 }
 .see_write .case_top li {
   width: 33.33%;
@@ -53,6 +53,7 @@
   background: #4d8cf4;
 }
 .see_write .three_model {
+  background: #fff;
   position: relative;
 }
 .see_write .three_model ul {
@@ -88,6 +89,7 @@
   margin: 0 auto;
   background: #fff;
   padding: 65px 40px 30px 70px;
+  height: 820px;
 }
 .historical .top ul li {
   float: left;
@@ -148,6 +150,10 @@
 }
 .historical .bottom ul li .last .dowload {
   color: #4d8cf4;
+}
+.historical .fenye {
+  position: absolute;
+  top: 825px;
 }
 .historical .fenye .page {
   padding: 30px 0;

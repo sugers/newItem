@@ -8,7 +8,7 @@ $(function () {
         }
     }
 
-    $("#page").initPage(71, 2, GG.kk);
+    $("#page").initPage(71, 1, GG.kk);
 
 
     //底部固定

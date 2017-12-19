@@ -33,9 +33,9 @@
   font-size: 14px;
 }
 .module {
+  padding-top: 20px;
   width: 1200px;
   margin: 0 auto;
-  background: #fff;
 }
 .module .case_top li {
   width: 33.33%;
@@ -54,6 +54,7 @@
 }
 .module .three_model {
   position: relative;
+  background: #fff;
 }
 .module .three_model ul {
   padding: 36px 39px 36px 69px;
@@ -83,6 +84,7 @@
   background: #069a45;
 }
 .apply_module {
+  background: #fff;
   width: 1200px;
   margin: 0 auto;
   background: #353f4b;

@@ -1,42 +1,43 @@
     @baseColor: #4c8bf4;
-.widthMargin {
-    width: 1200px;
-    margin: 0 auto;
-}
+    .widthMargin {
+        width: 1200px;
+        margin: 0 auto;
+    }
 
-.header {
-    height: 50px;
-    line-height: 50px;
-    background: @baseColor;
-    color: #fff;
-    .main {
-        .widthMargin;
-        .userMsg {
-            text-align: right;
-            line-height: 20px;
-            font-size: 12px;
-            margin-top: 4px;
-            span {
-                padding-left: 20px;
-            }
-            span.user {
-                background: url('../img/icon-user.png') left center no-repeat;
-                margin-right: 20px;
-            }
-            span.logOut {
-                background: url('../img/icon-logOut.png') left center no-repeat;
-                margin-left: 20px;
-            }
-            p {
-                font-size: 14px;
+    .header {
+        height: 50px;
+        line-height: 50px;
+        background: @baseColor;
+        color: #fff;
+        .main {
+            .widthMargin;
+            .userMsg {
+                text-align: right;
+                line-height: 20px;
+                font-size: 12px;
+                margin-top: 4px;
+                span {
+                    padding-left: 20px;
+                }
+                span.user {
+                    background: url('../img/icon-user.png') left center no-repeat;
+                    margin-right: 20px;
+                }
+                span.logOut {
+                    background: url('../img/icon-logOut.png') left center no-repeat;
+                    margin-left: 20px;
+                }
+                p {
+                    font-size: 14px;
+                }
             }
         }
     }
-}
+
     .see_write {
+        padding-top: 20px;
         width: 1200px;
         margin: 0 auto;
-        background: #fff;
         .case_top {
             li {
                 width: 33.33%;
@@ -53,13 +54,12 @@
             li:hover {
                 background: #4d8cf4;
             }
-        }
-        //3块模板
+        } //3块模板
         .three_model {
+            background: #fff;
             position: relative;
             ul {
                 padding: 36px 39px 36px 69px;
-                
                 li {
                     float: left;
                     width: 338px;
@@ -90,11 +90,13 @@
         }
     } // 历史 文书
     .historical {
+        background: #fff;
         position: relative;
         width: 1090px;
         margin: 0 auto;
         background: #fff;
         padding: 65px 40px 30px 70px;
+        height: 820px;
         .top {
             ul {
                 li {
@@ -164,6 +166,8 @@
             }
         } //分页
         .fenye {
+            position: absolute;
+            top:825px;
             .page {
                 padding: 30px 0;
                 margin-left: 300px;

@@ -33,9 +33,9 @@
   font-size: 14px;
 }
 .dingao_detail {
+  padding-top: 20px;
   width: 1200px;
   margin: 0 auto;
-  background: #fff;
 }
 .dingao_detail .case_top li {
   width: 33.33%;
@@ -56,7 +56,7 @@
   display: inline-block;
   position: absolute;
   font-size: 16px;
-  top: 98px;
+  top: 118px;
   width: 240px;
   bottom: 0;
   background: #343e4a;
