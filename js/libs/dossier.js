@@ -1,22 +1,23 @@
 $(function() {
+    'user strict';
     var tipBool = false;
     // 案件块的显示与隐藏
     $('#tip').click(function () {
         if (tipBool) {
             $(this).css('left', 0);
-            console.log($(this).find('img').attr('src', '../img/icon-rightArrow.png'))
+            console.log($(this).find('img').attr('src', '../img/icon-rightArrow.png'));
             $('.fixedBox').width(0).find('.cases').css({ 'display': 'none' });
         } else {
-            console.log($(this).find('img').attr('src','../img/icon-leftArrow.png'))
+            console.log($(this).find('img').attr('src','../img/icon-leftArrow.png'));
             $(this).css('left', '300px');
             $('.fixedBox').width(300).find('.cases').css({ 'display': 'block' });
         }
-        tipBool = !tipBool
+        tipBool = !tipBool;
     });
     // 显示与隐藏左目录块
     $('#catalog').click(function() {
         $('.leftSide').slideToggle(100);
-    })
+    });
     // 左目录块，显示与隐藏目录列表
     $('.leftSide').on('click', '.muluName', function() {
         $(this).next().fadeToggle(10);

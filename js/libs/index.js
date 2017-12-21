@@ -11,6 +11,7 @@
  * 总的一句话，传的数据越来越多，做的事情越来越少
  */
 $(function() {
+    'user strict';
     var dataItemPositionArr = [];
     var isFirst = true;
     // 初始请求数据（最近处理案件）
