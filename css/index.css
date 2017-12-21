@@ -152,12 +152,12 @@ body {
   width: 155px;
   padding-right: 20px;
 }
-.search .searchM .searchRes .startTime {
+.search .searchM .searchRes .registerTime {
   float: left;
   width: 85px;
   padding-right: 20px;
 }
-.search .searchM .searchRes .dealTime {
+.search .searchM .searchRes .processTime {
   float: left;
   width: 85px;
 }
@@ -259,7 +259,8 @@ body {
   position: absolute;
   top: 62px;
   bottom: 0;
-  overflow: auto;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 .container .content .rightSide {
   float: left;
@@ -394,13 +395,13 @@ body {
   overflow: hidden;
   white-space: nowrap;
 }
-.container .content .rightSide .historyRight .startTime {
+.container .content .rightSide .historyRight .registerTime {
   float: left;
   width: 108px;
   padding-right: 20px;
   box-sizing: border-box;
 }
-.container .content .rightSide .historyRight .dealTime {
+.container .content .rightSide .historyRight .processTime {
   float: left;
   width: 80px;
 }

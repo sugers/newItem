@@ -124,15 +124,32 @@ body {
   height: 48px;
   width: 33.3%;
   box-sizing: border-box;
-  border-right: 1px solid #576171;
+  border-left: 1px solid #576171;
   text-align: center;
   line-height: 48px;
   color: #fff;
   background: #353f4b;
   cursor: pointer;
 }
+.container .nav li a {
+  display: block;
+  color: #fff;
+}
+.container .nav li:first-child:hover {
+  border-left-color: #4c8bf4;
+}
+.container .nav li:first-child.active {
+  border-left-color: #4c8bf4;
+}
 .container .nav li.active {
   background: #4c8bf4;
+  color: #fff;
+}
+.container .nav li:hover {
+  background: #4c8bf4;
+  color: #fff;
+}
+.container .nav li:hover a {
   color: #fff;
 }
 .container .conHeader {

@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>案件信息</title>
     <script src="../js/libs/jquery/jquery.min.js"></script>
-    <!--<script src="../js/libs/artTemplate/template.js"></script>-->
     <script src="../js/libs/case_info.js"></script>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/case_info.css">
@@ -30,9 +29,9 @@
     </div>
     <div class="case_info">
         <ul class="case_top" id="clear">
-            <li>筑牢人仲收字[2018]第51号</li>
-            <li>电子卷宗</li>
-            <li>电子文书</li>
+            <li class="active"><a href="javascript:void(0);">筑牢人仲收字[2018]第51号</a></li>
+            <li><a href="dossier.html" style="color:#fff; display:block;">电子卷宗</a></li>
+            <li><a href="see_write.html">电子文书</a></li>
         </ul>
         <!--筑牢人仲收字[2018]第51号区域-->
         <div class="case_left">
@@ -103,14 +102,14 @@
                 <div class="base_info" id="base_info">
                     <div class="base_title">基本信息</div>
                     <div class="base_content">
-                        <ul class="base_one">
+                        <ul class="base_one" class="font_size">
                             <!--<li>
                                 <span>收案号</span>
                                 <input type="text" value="筑牢人仲收字[2018]第51号" readonly="readonly">
                             </li>
                             <li>
                                 <span>所属冲裁院</span>
-                                <input type="text">
+                                <input type="text" readonly="readonly">
                             </li>
                             <li>
                                 <span>仲裁申请日期</span>
@@ -119,14 +118,14 @@
                             </select>
                             </li>-->
                         </ul>
-                        <ul class='base_two'>
+                        <ul class='base_two' class="font_size">
                             <!--<li>
                                 <span>立案号</span>
                                 <input type="text" value="筑牢人仲收字[2018]第51号" readonly="readonly">
                             </li>
                             <li>
                                 <span>争议性质</span>
-                                <input type="text">
+                                <input type="text" readonly="readonly">
                             </li>
                             <li>
                                 <span>收案日期</span>
@@ -137,7 +136,7 @@
                              </select>
                             </li>-->
                         </ul>
-                        <ul class="base_remenber">
+                        <ul class="base_remenber" class="font_size">
                             <!--<li>
                                 <span>备注</span>
                                 <input type="text">
@@ -151,7 +150,7 @@
                 <div class="reson_info" id="reson_info">
                     <div class="reson_title">事实和理由</div>
                     <div class="reson_conten">
-                        <ul class="reson_remenber">
+                        <ul class="reson_remenber" class="font_size">
                             <li>
                                 <span>事实和理由</span>
                                 <textarea name="" id="" cols="30" rows="10" placeholder="请输入事实和理由"></textarea>
@@ -166,7 +165,7 @@
                     <div class="applyer_title" id="applyer_title">申请人信息
                         <div class="z_title">
                             <span class="personal">个人</span>
-                            <span>单位</span>
+                            <span class="unit">单位</span>
                         </div>
 
                     </div>
@@ -175,7 +174,7 @@
                         <div class="personal_apply">
                             <div class="person_apply">
                                 <div class="introduce">个人申请人</div>
-                                <ul id='clear'>
+                                <ul id='clear' class="font_size">
                                     <!--<li>
                                         <span>姓名</span>
                                         <input type="text">
@@ -225,7 +224,7 @@
                         <!--单位申请人-->
                         <div class="unit_apply">
                             <div class="introduce">单位申请人</div>
-                            <ul id='clear'>
+                            <ul id='clear' class="font_size">
                                 <li>
                                     <span>单位人名称</span>
                                     <input type="text">
@@ -277,7 +276,7 @@
                             <div class="introduce">个人申请人2
                                 <span><img src="../img/delete.png" alt="" >删除</span>
                             </div>
-                            <ul id='clear'>
+                            <ul id='clear' class="font_size">
                                 <li>
                                     <span>姓名</span>
                                     <input type="text">
@@ -343,7 +342,7 @@
                         <div class="b_applyer_tab">
                             <div class="person_apply">
                                 <div class="introduce">个人申请人</div>
-                                <ul id='clear'>
+                                <ul id='clear' class="font_size">
                                     <li>
                                         <span>姓名</span>
                                         <input type="text">
@@ -389,9 +388,9 @@
                                 </ul>
                             </div>
                             <!--单位被申请人-->
-                            <div class="b_unit_apply">
+                            <!--<div class="b_unit_apply">
                                 <div class="introduce">单位被申请人</div>
-                                <ul id='clear'>
+                                <ul id='clear' class="font_size">
                                     <li>
                                         <span>单位人名称</span>
                                         <input type="text">
@@ -436,7 +435,8 @@
                                     </li>
                                 </ul>
 
-                            </div>
+                            </div>-->
+                            
 
 
                         </div>
@@ -448,11 +448,11 @@
                         <!--第三人信息-->
                         <div class="t_applyer_title" id="t_applyer_title">第三人信息</div>
                         <div class="t_applyer_tab">
-                            <div class="person_apply">
+                            <!--<div class="person_apply">
                                 <div class="introduce">个人第三人
                                     <span><img src="../img/delete.png" alt="" >删除</span>
                                 </div>
-                                <ul id='clear'>
+                                <ul id='clear' class="font_size">
                                     <li>
                                         <span>姓名</span>
                                         <input type="text">
@@ -496,7 +496,7 @@
                                         <input type="text">
                                     </li>
                                 </ul>
-                            </div>
+                            </div>-->
 
                             <!--添加申请-->
                             <div class="add_apply add_apply_three">
@@ -509,7 +509,7 @@
                                 <div class="introduce">单位第三人
                                     <span><img src="../img/delete.png" alt="" >删除</span>
                                 </div>
-                                <ul id='clear'>
+                                <ul id='clear' class="font_size">
                                     <li>
                                         <span>单位名称</span>
                                         <input type="text">
@@ -561,11 +561,11 @@
                         </div>
                         <!--仲裁申请-->
                         <div class="arbitrament_applyer_title" id="arbitrament_applyer_title">仲裁请求</div>
-                        <div class="arbitrament_apply">
+                        <!--<div class="arbitrament_apply">
                             <div class="introduce">仲裁请求
                                 <span><img src="../img/delete.png" alt="" >删除</span>
-                            </div>
-                            <ul id='clear'>
+                            </div>-->
+                            <!--<ul id='clear' class="font_size">-->
                                 <!--<li>
                                     <span>仲裁请求类型</span>
                                     <select name="" id="">
@@ -582,8 +582,8 @@
                                     <span>仲裁请求</span>
                                     <input type="text">
                                 </li>-->
-                            </ul>
-                        </div>
+                            <!--</ul>-->
+                        <!--</div>-->
                         <!--添加仲裁申请-->
                         <div class="add_apply add_apply_five">
                             添加仲裁申请+

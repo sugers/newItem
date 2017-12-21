@@ -35,7 +35,7 @@
 .case_info {
   width: 1200px;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 10px;
   position: relative;
 }
 .case_info .case_top li {
@@ -46,11 +46,25 @@
   line-height: 48px;
   text-align: center;
   color: #fff;
-  border-left: 1px solid #fff;
-  margin-left: -1px;
+  border: 1px solid #576171;
+  border-width: 0 0 0 1px;
   font-size: 16px;
+  box-sizing: border-box;
+}
+.case_info .case_top li a {
+  display: block;
+  color: #fff;
+}
+.case_info .case_top li:first-child:hover {
+  border-left-color: #4c8bf4;
+}
+.case_info .case_top li:first-child.active {
+  border-left-color: #4c8bf4;
 }
 .case_info .case_top li:hover {
+  background: #4d8cf4;
+}
+.case_info .case_top li.active {
   background: #4d8cf4;
 }
 .case_info .case_left {
@@ -154,7 +168,7 @@
   border: none;
   float: right;
   position: absolute;
-  top: 68px;
+  top: 58px;
   bottom: 0;
   left: 180px;
   overflow: hidden;
@@ -218,16 +232,20 @@
   background: #ebf3ff;
   border-top: 1px solid #fff;
 }
-.case_info .case_right .base_info .base_content ul li input,
-.case_info .case_right .base_info .base_content ul li select {
+.case_info .case_right .base_info .base_content ul li input {
   display: inline-block;
   border: none;
   outline: none;
   width: 50%;
   padding-left: 14px;
-}
-.case_info .case_right .base_info .base_content ul li input {
   color: #6e9ef5;
+}
+.case_info .case_right .base_info .base_content ul li select {
+  display: inline-block;
+  border: none;
+  outline: none;
+  width: 67%;
+  padding-left: 14px;
 }
 .case_info .case_right .base_info .base_content .base_two {
   width: 47%;
@@ -316,27 +334,26 @@
   border-right: 1px solid #ccc;
 }
 .case_info .case_right .applyer_info .applyer_title .z_title {
-  position: absolute;
   height: 25px;
   line-height: 25px;
-  width: 100px;
+  position: absolute;
   color: #fff;
   background: #4d8cf4;
   border: 1px solid #fff;
-  left: 105px;
-  top: 0;
-  margin-top: 5px;
+  left: 125px;
+  top: 5px;
 }
 .case_info .case_right .applyer_info .applyer_title .z_title span {
+  float: left;
   font-size: 14px;
-  display: inline-block;
-  width: 47%;
+  width: 50%;
   text-align: center;
 }
 .case_info .case_right .applyer_info .applyer_title .z_title .personal {
   background: #fff;
   color: #4d8cf4;
   border-right: 1px solid #fff;
+  margin-right: -1px;
 }
 .case_info .case_right .applyer_info .applyer_tab .person_apply {
   margin-right: 30px;
@@ -488,27 +505,26 @@
   border-right: 1px solid #ccc;
 }
 .case_info .case_right .applyer_info .b_applyer_title .z_title {
-  position: absolute;
   height: 25px;
   line-height: 25px;
-  width: 100px;
+  position: absolute;
   color: #fff;
   background: #4d8cf4;
   border: 1px solid #fff;
-  left: 120px;
-  top: 0;
-  margin-top: 5px;
+  left: 125px;
+  top: 5px;
 }
 .case_info .case_right .applyer_info .b_applyer_title .z_title span {
+  float: left;
   font-size: 14px;
-  display: inline-block;
-  width: 47%;
+  width: 50%;
   text-align: center;
 }
 .case_info .case_right .applyer_info .b_applyer_title .z_title .personal {
   background: #fff;
   color: #4d8cf4;
   border-right: 1px solid #fff;
+  margin-right: -1px;
 }
 .case_info .case_right .applyer_info .b_applyer_tab .person_apply {
   margin-right: 30px;
@@ -608,27 +624,26 @@
   border-right: 1px solid #ccc;
 }
 .case_info .case_right .applyer_info .t_applyer_title .z_title {
-  position: absolute;
   height: 25px;
   line-height: 25px;
-  width: 100px;
+  position: absolute;
   color: #fff;
   background: #4d8cf4;
   border: 1px solid #fff;
   left: 105px;
-  top: 0;
-  margin-top: 5px;
+  top: 5px;
 }
 .case_info .case_right .applyer_info .t_applyer_title .z_title span {
+  float: left;
   font-size: 14px;
-  display: inline-block;
-  width: 47%;
+  width: 50%;
   text-align: center;
 }
 .case_info .case_right .applyer_info .t_applyer_title .z_title .personal {
   background: #fff;
   color: #4d8cf4;
   border-right: 1px solid #fff;
+  margin-left: -1px;
 }
 .case_info .case_right .applyer_info .t_applyer_tab .person_apply {
   margin-right: 30px;

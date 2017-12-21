@@ -37,7 +37,7 @@
 .case_info {
     width: 1200px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 10px;
     position: relative;
     .case_top {
         li {
@@ -48,11 +48,26 @@
             line-height: 48px;
             text-align: center;
             color: #fff;
-            border-left: 1px solid #fff;
-            margin-left: -1px;
-            font-size: 16px;
+            border: 1px solid #576171;
+            border-width: 0 0 0 1px;  
+            // margin-left: -1px;
+            font-size: 16px;                    
+            box-sizing: border-box;
+            a {
+                display: block;
+                color: #fff;
+            }
+        }
+        li:first-child:hover{
+            border-left-color: @baseColor;
+        }
+        li:first-child.active{
+            border-left-color: @baseColor;
         }
         li:hover {
+            background: #4d8cf4;
+        }
+        li.active {
             background: #4d8cf4;
         }
     } // 左边栏
@@ -82,9 +97,7 @@
             }
         }
     }
-    
-          .fixedBox {
-        
+    .fixedBox {
         position: absolute;
         top: 68px;
         bottom: 0;
@@ -107,8 +120,9 @@
                 position: absolute;
                 top: 0;
                 bottom: 0;
-                width: 317px;  
-                background: #353f4b;;
+                width: 317px;
+                background: #353f4b;
+                ;
                 display: block;
                 overflow-y: scroll;
                 >li {
@@ -158,8 +172,7 @@
             cursor: pointer;
             text-align: center;
         }
-    }
-     // 右边content
+    } // 右边content
     .case_right {
         width: 1000px;
         padding-left: 20px;
@@ -168,7 +181,7 @@
         border: none;
         float: right;
         position: absolute;
-        top: 68px;
+        top: 58px;
         bottom: 0;
         left: 180px;
         overflow: hidden;
@@ -231,16 +244,20 @@
                             background: #ebf3ff;
                             border-top: 1px solid #fff;
                         }
-                        input,
-                        select {
+                        input {
                             display: inline-block;
                             border: none;
                             outline: none;
                             width: 50%;
                             padding-left: 14px;
-                        }
-                        input {
                             color: #6e9ef5;
+                        }
+                        select {
+                            display: inline-block;
+                            border: none;
+                            outline: none;
+                            width: 67%;
+                            padding-left: 14px;
                         }
                     }
                 }
@@ -331,26 +348,25 @@
                 background: #4d8cf4;
                 border-right: 1px solid #ccc;
                 .z_title {
-                    position: absolute;
                     height: 25px;
                     line-height: 25px;
-                    width: 100px;
+                    position: absolute;
                     color: #fff;
                     background: #4d8cf4;
                     border: 1px solid #fff;
-                    left: 105px;
-                    top: 0;
-                    margin-top: 5px;
+                    left: 125px;
+                    top: 5px;
                     span {
+                        float: left;
                         font-size: 14px;
-                        display: inline-block;
-                        width: 47%;
+                        width: 50%;
                         text-align: center;
                     }
                     .personal {
                         background: #fff;
                         color: #4d8cf4;
                         border-right: 1px solid #fff;
+                        margin-right: -1px;
                     }
                 }
             } //个人申请信息
@@ -505,26 +521,25 @@
                 background: #4d8cf4;
                 border-right: 1px solid #ccc;
                 .z_title {
-                    position: absolute;
                     height: 25px;
                     line-height: 25px;
-                    width: 100px;
+                    position: absolute;
                     color: #fff;
                     background: #4d8cf4;
                     border: 1px solid #fff;
-                    left: 120px;
-                    top: 0;
-                    margin-top: 5px;
+                    left: 125px;
+                    top: 5px;
                     span {
+                        float: left;
                         font-size: 14px;
-                        display: inline-block;
-                        width: 47%;
+                        width: 50%;
                         text-align: center;
                     }
                     .personal {
                         background: #fff;
                         color: #4d8cf4;
                         border-right: 1px solid #fff;
+                        margin-right: -1px;
                     }
                 }
             }
@@ -628,26 +643,25 @@
                 background: #4d8cf4;
                 border-right: 1px solid #ccc;
                 .z_title {
-                    position: absolute;
                     height: 25px;
                     line-height: 25px;
-                    width: 100px;
+                    position: absolute;
                     color: #fff;
                     background: #4d8cf4;
                     border: 1px solid #fff;
                     left: 105px;
-                    top: 0;
-                    margin-top: 5px;
+                    top: 5px;
                     span {
+                        float: left;
                         font-size: 14px;
-                        display: inline-block;
-                        width: 47%;
+                        width: 50%;
                         text-align: center;
                     }
                     .personal {
                         background: #fff;
                         color: #4d8cf4;
                         border-right: 1px solid #fff;
+                        margin-left: -1px;
                     }
                 }
             }

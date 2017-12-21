@@ -132,16 +132,34 @@ body {
             height: 48px;
             width: 33.3%;
             box-sizing: border-box;
-            border-right: 1px solid #576171;
+            border-left: 1px solid #576171;
             text-align: center;
             line-height: 48px;
             color: #fff;
             background: #353f4b;
             cursor: pointer;
+            
+            a {
+                display: block;
+                color: #fff;
+            }
+        }
+        li:first-child:hover{
+            border-left-color: @baseColor;
+        }
+        li:first-child.active{
+            border-left-color: @baseColor;
         }
         li.active {
             background: @baseColor;
             color: #fff;
+        }
+        li:hover {
+            background: @baseColor;
+            color: #fff;
+            a {
+                color: #fff;
+            }
         }
     }
     .conHeader {

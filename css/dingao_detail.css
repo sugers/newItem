@@ -45,12 +45,26 @@
   line-height: 48px;
   text-align: center;
   color: #fff;
-  border-left: 1px solid #fff;
-  margin-left: -1px;
+  border-left: 1px solid #576171;
   font-size: 16px;
+  box-sizing: border-box;
+  border-width: 0 0 0 1px;
+}
+.dingao_detail .case_top li a {
+  display: block;
+  color: #fff;
+}
+.dingao_detail .case_top li:first-child:hover {
+  border-left-color: #4c8bf4;
+}
+.dingao_detail .case_top li:first-child.active {
+  border-left-color: #4c8bf4;
 }
 .dingao_detail .case_top li:hover {
   background: #4d8cf4;
+}
+.dingao_detail .case_top .active {
+  background: #4c8bf4;
 }
 .dingao_detail .detail_left {
   display: inline-block;
@@ -246,7 +260,7 @@
   width: 1108px;
   margin: 0 auto;
   padding-top: 10px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   border-bottom: 2px solid #4d8cf4;
 }
 .dingao_detail .detail_right .right_top .num {
@@ -290,6 +304,6 @@
 }
 .dingao_detail .detail_right .right_content .pic img {
   border: 2px solid #ccc;
-  width: 11100px;
+  width: 1000px;
   max-width: 92%;
 }

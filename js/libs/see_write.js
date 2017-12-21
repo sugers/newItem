@@ -73,4 +73,9 @@ $(function () {
         tipBool = !tipBool
     });
 
+    $('.three_model .one').click(function() {
+        $('.historical').slideUp(100);
+        $('.all').slideDown(100);
+    });
+
 })
